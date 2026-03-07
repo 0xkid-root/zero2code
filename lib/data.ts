@@ -168,7 +168,7 @@ export const testimonials = [
     name: "Priya Sharma",
     role: "Full-Stack Developer",
     company: "Tech Startup",
-    text: "SkillManthan transformed my career. The industry-aligned curriculum and expert mentorship helped me land my dream job.",
+    text: "zerotwocode transformed my career. The industry-aligned curriculum and expert mentorship helped me land my dream job.",
     avatar: "PS"
   },
   {
