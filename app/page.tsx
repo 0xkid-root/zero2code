@@ -18,9 +18,10 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
+       <WhyChooseUs />
+
         <LearningPaths />
-        <FeaturesSection />
-        <WhyChooseUs />
+        {/* <FeaturesSection /> */}
         <PricingSection />
         <TestimonialsSection />
         <FAQSection />

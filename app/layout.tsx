@@ -47,23 +47,7 @@ export const metadata: Metadata = {
     description: 'Transform your career with industry-aligned IT training. 98% placement rate.',
     images: ['https://zerotwocode.com/twitter-image.png'],
   },
-  icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
-  },
+  
 }
 
 export default function RootLayout({

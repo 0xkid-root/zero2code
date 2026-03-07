@@ -39,7 +39,7 @@ export default function FAQSection() {
         </Accordion>
 
         {/* Additional Support */}
-        <div className="mt-12 text-center bg-secondary rounded-lg p-8">
+        {/* <div className="mt-12 text-center bg-secondary rounded-lg p-8">
           <h3 className="text-lg font-semibold text-foreground mb-2">
             Still have questions?
           </h3>
@@ -60,7 +60,7 @@ export default function FAQSection() {
               Schedule Call
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   )

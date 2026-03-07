@@ -25,11 +25,15 @@ export default function Header() {
             Courses
           </Link>
           <Link href="#outcomes" className="text-foreground hover:text-primary transition">
-            Outcomes
+            Training Programs
           </Link>
           <Link href="#pricing" className="text-foreground hover:text-primary transition">
             Pricing
           </Link>
+          <Link href="#testimonials" className="text-foreground hover:text-primary transition">
+            Testimonials
+          </Link>
+
           <Link href="#faq" className="text-foreground hover:text-primary transition">
             FAQ
           </Link>
@@ -38,7 +42,7 @@ export default function Header() {
         {/* CTA Button */}
         <div className="hidden md:block">
           <Button className="bg-primary hover:bg-primary/90 text-white rounded-full px-6">
-            Get Started
+            Register
           </Button>
         </div>
 
