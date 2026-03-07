@@ -1,0 +1,103 @@
+import type { Metadata, Viewport } from 'next'
+import { Geist, Geist_Mono } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/next'
+import './globals.css'
+
+const _geist = Geist({ subsets: ["latin"] });
+const _geistMono = Geist_Mono({ subsets: ["latin"] });
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#FF6B35' },
+    { media: '(prefers-color-scheme: dark)', color: '#FF6B35' },
+  ],
+}
+
+export const metadata: Metadata = {
+  title: 'ZeroTwoCode - Industry-Oriented IT Training Programs',
+  description: 'Transform your tech career with ZeroTwoCode. Expert-led IT training in AWS, Python, Java, Android, Digital Marketing & Full-Stack development with 98% placement rate.',
+  keywords: 'IT training, programming courses, AWS training, Python development, Java training, Full-Stack development, career development, online courses',
+  authors: [{ name: 'ZeroTwoCode' }],
+  creator: 'ZeroTwoCode',
+  publisher: 'ZeroTwoCode',
+  robots: 'index, follow',
+  openGraph: {
+    type: 'website',
+    locale: 'en_IN',
+    url: 'https://zerotwocode.com',
+    siteName: 'ZeroTwoCode',
+    title: 'ZeroTwoCode - Industry-Oriented IT Training Programs',
+    description: 'Transform your tech career with expert-led IT training. 98% placement rate. Courses in AWS, Python, Java, and more.',
+    images: [
+      {
+        url: 'https://zerotwocode.com/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'ZeroTwoCode - IT Training',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'ZeroTwoCode - IT Training Programs',
+    description: 'Transform your career with industry-aligned IT training. 98% placement rate.',
+    images: ['https://zerotwocode.com/twitter-image.png'],
+  },
+  icons: {
+    icon: [
+      {
+        url: '/icon-light-32x32.png',
+        media: '(prefers-color-scheme: light)',
+      },
+      {
+        url: '/icon-dark-32x32.png',
+        media: '(prefers-color-scheme: dark)',
+      },
+      {
+        url: '/icon.svg',
+        type: 'image/svg+xml',
+      },
+    ],
+    apple: '/apple-icon.png',
+  },
+}
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode
+}>) {
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'ZeroTwoCode',
+    url: 'https://zerotwocode.com',
+    logo: 'https://zerotwocode.com/logo.png',
+    description: 'Industry-oriented IT training platform',
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'Customer Service',
+      telephone: '+91-9876543210',
+      email: 'info@zerotwocode.com',
+    },
+  }
+
+  return (
+    <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+      </head>
+      <body className="font-sans antialiased">
+        {children}
+        <Analytics />
+      </body>
+    </html>
+  )
+}
