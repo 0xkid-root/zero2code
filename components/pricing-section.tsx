@@ -1,83 +1,168 @@
-import { pricing } from '@/lib/data'
-import { Card } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Check } from 'lucide-react'
+"use client"
+
+import { useEffect, useRef, useState } from "react"
+import { pricing } from "@/lib/data"
+import { Button } from "@/components/ui/button"
+import { Check, Zap } from "lucide-react"
 
 export default function PricingSection() {
+  const [visible, setVisible] = useState(false)
+  const sectionRef = useRef<HTMLElement>(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) setVisible(true) },
+      { threshold: 0.1 }
+    )
+    if (sectionRef.current) observer.observe(sectionRef.current)
+    return () => observer.disconnect()
+  }, [])
+
   return (
-    <section id="pricing" className="py-16 md:py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4">
-        {/* Section Header */}
-        <div className="text-center mb-12 space-y-4 animate-slide-up">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-            Simple plans for serious learners
+    <section
+      ref={sectionRef}
+      id="pricing"
+      className="relative py-20 md:py-32 bg-background overflow-hidden"
+    >
+      {/* Grid background */}
+      <div
+        className="absolute inset-0 opacity-40 pointer-events-none"
+        style={{
+          backgroundImage:
+            "linear-gradient(hsl(var(--border)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--border)) 1px, transparent 1px)",
+          backgroundSize: "48px 48px",
+          maskImage: "radial-gradient(ellipse 85% 80% at 50% 50%, black 30%, transparent 100%)",
+          WebkitMaskImage: "radial-gradient(ellipse 85% 80% at 50% 50%, black 30%, transparent 100%)",
+        }}
+      />
+      <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_65%_60%_at_50%_50%,hsl(var(--background)/0.95)_0%,transparent_100%)]" />
+
+      <div className="relative max-w-6xl mx-auto px-6">
+
+        {/* Header */}
+        <div className={`text-center mb-16 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+          <div className="flex items-center justify-center gap-3 mb-5">
+            <div className="h-px w-10 bg-border" />
+            <span className="text-xs font-mono font-medium tracking-[0.25em] uppercase text-muted-foreground">
+              // pricing
+            </span>
+            <div className="h-px w-10 bg-border" />
+          </div>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground leading-tight mb-4">
+            Choose your
+            <br />
+            <span className="text-primary">training program</span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Choose the perfect plan for your learning journey
+          <p className="text-muted-foreground max-w-xl mx-auto text-base md:text-lg">
+            Pick the best learning program designed to boost your career and industry skills.
           </p>
         </div>
 
-        {/* Pricing Cards */}
-        <div className="grid md:grid-cols-3 gap-8">
-          {pricing.map((plan, index) => (
-            <Card
-              key={plan.id}
-              className={`p-8 border-border transition-smooth ${
-                plan.isPopular
-                  ? 'ring-2 ring-primary shadow-lg'
-                  : 'hover:shadow-lg'
-              }`}
-              style={{ animation: `bounce-in 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) ${index * 0.15}s backwards` }}
-            >
-              {plan.isPopular && (
-                <div className="inline-block bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold mb-4">
-                  Most Popular
-                </div>
-              )}
+        {/* Cards */}
+        <div className="grid md:grid-cols-3 gap-6 items-start">
+          {pricing.map((plan, i) => {
+            const isPopular = plan.isPopular
 
-              <div className="space-y-4">
-                <div>
-                  <h3 className="text-2xl font-bold text-foreground">{plan.name}</h3>
-                  {plan.originalPrice && (
-                    <p className="text-sm text-muted-foreground line-through">
-                      {plan.originalPrice}
-                    </p>
+            return (
+              <div
+                key={plan.id}
+                className={`
+                  relative rounded-2xl border bg-white flex flex-col transition-all duration-500
+                  ${isPopular
+                    ? "border-primary/40 shadow-2xl md:-translate-y-4 z-10"
+                    : "border-border hover:-translate-y-1 hover:shadow-lg"
+                  }
+                  ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
+                `}
+                style={{ transitionDelay: `${100 + i * 100}ms` }}
+              >
+                {/* Popular glow strip at top */}
+                {isPopular && (
+                  <div className="absolute -top-px left-6 right-6 h-[3px] rounded-full bg-primary" />
+                )}
+
+                {/* Popular badge */}
+                {isPopular && (
+                  <div className="absolute -top-3.5 left-1/2 -translate-x-1/2">
+                    <span className="inline-flex items-center gap-1.5 bg-primary text-white text-xs font-semibold px-4 py-1.5 rounded-full shadow-md whitespace-nowrap">
+                      <Zap size={11} className="fill-white" />
+                      Most Popular
+                    </span>
+                  </div>
+                )}
+
+                <div className="p-8 flex flex-col flex-1 gap-6">
+
+                  {/* Plan badge */}
+                  {plan.badge && (
+                    <span className="self-start text-xs font-semibold px-3 py-1 rounded-full bg-secondary text-primary border border-primary/20">
+                      {plan.badge}
+                    </span>
                   )}
-                </div>
 
-                <Button
-                  className={`w-full py-6 rounded-full font-semibold transition-smooth hover:shadow-lg group ${
-                    plan.isPopular
-                      ? 'bg-primary hover:bg-primary/90 text-white'
-                      : 'border border-primary text-primary hover:bg-secondary'
-                  }`}
-                >
-                  Get Started
-                  {plan.isPopular && <span className="animate-pulse ml-2">→</span>}
-                </Button>
-
-                <div className="space-y-3 pt-4">
-                  {plan.features.map((feature, idx) => (
-                    <div key={idx} className="flex gap-3 items-start">
-                      <Check className="text-primary mt-1 flex-shrink-0" size={18} />
-                      <span className="text-sm text-foreground">{feature}</span>
+                  {/* Title + description */}
+                  <div>
+                    <div className="flex items-center justify-between mb-1">
+                      <h3 className="text-xl font-bold text-foreground">{plan.title}</h3>
+                      <span className="text-xs font-mono text-muted-foreground/40">
+                        {String(i + 1).padStart(2, "0")}
+                      </span>
                     </div>
-                  ))}
+                    {plan.description && (
+                      <p className="text-sm text-muted-foreground">{plan.description}</p>
+                    )}
+                  </div>
+
+                  {/* Price */}
+                  <div className="flex items-end gap-1">
+                    <span className={`text-4xl font-extrabold ${isPopular ? "text-primary" : "text-foreground"}`}>
+                      {plan.price}
+                    </span>
+                    {plan.period && (
+                      <span className="text-sm text-muted-foreground mb-1.5">/{plan.period}</span>
+                    )}
+                  </div>
+
+                  {/* Divider */}
+                  <div className={`h-px w-full ${isPopular ? "bg-primary/15" : "bg-border"}`} />
+
+                  {/* Features */}
+                  <ul className="space-y-3 flex-1">
+                    {plan.features.map((feature, fi) => (
+                      <li key={fi} className="flex items-start gap-3">
+                        <span className={`mt-0.5 shrink-0 w-4 h-4 rounded-full flex items-center justify-center ${
+                          isPopular ? "bg-primary/10" : "bg-secondary"
+                        }`}>
+                          <Check size={10} className="text-primary" strokeWidth={3} />
+                        </span>
+                        <span className="text-sm text-muted-foreground leading-snug">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  {/* CTA */}
+                  <Button
+                    className={`w-full font-semibold py-5 rounded-xl mt-2 transition-all duration-200 ${
+                      isPopular
+                        ? "bg-primary hover:bg-primary/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5"
+                        : "bg-secondary hover:bg-secondary/80 text-foreground border border-border hover:border-primary/30"
+                    }`}
+                  >
+                    Enroll Now
+                  </Button>
                 </div>
               </div>
-            </Card>
-          ))}
+            )
+          })}
         </div>
 
-        {/* Additional Info */}
-        <div className="mt-12 text-center space-y-4">
-          <p className="text-muted-foreground">
-            All plans include 7-day money-back guarantee and lifetime access to materials
-          </p>
-          <p className="text-sm text-muted-foreground">
-            Need a custom plan? <span className="text-primary font-semibold cursor-pointer">Contact our team</span>
-          </p>
-        </div>
+        {/* Bottom note */}
+        <p className={`text-center text-sm text-muted-foreground mt-10 transition-all duration-700 delay-500 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
+          All plans include a{" "}
+          <span className="font-medium text-foreground">7-day money-back guarantee.</span>{" "}
+          No questions asked.
+        </p>
+
       </div>
     </section>
   )

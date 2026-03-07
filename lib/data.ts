@@ -123,42 +123,51 @@ export const benefits = [
 export const pricing = [
   {
     id: 1,
-    name: "₹5000 / month",
-    originalPrice: "₹6000",
-    type: "per-month",
+    badge: "Best for Students",
+    title: "Summer Training",
+    price: "₹5,000",
     features: [
-      "Access to all courses",
-      "Live classes 3x per week",
-      "Community support",
-      "Monthly assessments"
-    ]
+      "5 Hour Daily Classes",
+      "Recovery Classes Included",
+      "Study Materials Provided",
+      "Online Portal Access – 1 Year",
+      "Free Web Hosting",
+      "Project File & Guidance"
+    ],
+    buttonText: "Enroll Now",
+    isPopular: false
   },
   {
     id: 2,
-    name: "₹25000 / quarter",
-    originalPrice: "₹30000",
-    type: "popular",
+    badge: "Skill Booster",
+    title: "Industrial Training",
+    price: "₹5,000",
     features: [
-      "Everything in Monthly",
-      "1-on-1 mentorship",
-      "Priority support",
-      "Certificate of completion",
-      "Job preparation"
+      "Industry Exposure",
+      "Practical Focused Sessions",
+      "Expert Mentorship",
+      "Hands-on Projects",
+      "Professional Skill Building",
+      "Customized Learning Path"
     ],
+    buttonText: "Enroll Now",
     isPopular: true
   },
   {
     id: 3,
-    name: "₹6000 / month",
-    originalPrice: "₹8000",
-    type: "premium",
+    badge: "Career Focused",
+    title: "Job-Ready Training",
+    price: "₹25,000",
     features: [
-      "Lifetime access",
-      "All courses included",
-      "Expert mentorship",
-      "Interview preparation",
-      "Career placement support"
-    ]
+      "Placement Assistance",
+      "Mock Interviews",
+      "Industry Expert Trainers",
+      "Live Projects",
+      "Job-Ready Curriculum",
+      "Certificates Included"
+    ],
+    buttonText: "Enroll Now",
+    isPopular: false
   }
 ];
 
