@@ -38,29 +38,7 @@ export default function FAQSection() {
           ))}
         </Accordion>
 
-        {/* Additional Support */}
-        {/* <div className="mt-12 text-center bg-secondary rounded-lg p-8">
-          <h3 className="text-lg font-semibold text-foreground mb-2">
-            Still have questions?
-          </h3>
-          <p className="text-muted-foreground mb-4">
-            Our support team is here to help
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="mailto:support@skillmanthan.com"
-              className="px-6 py-2 bg-primary text-white rounded-full font-semibold hover:bg-primary/90 transition"
-            >
-              Email Us
-            </a>
-            <a
-              href="#contact"
-              className="px-6 py-2 border border-primary text-primary rounded-full font-semibold hover:bg-white transition"
-            >
-              Schedule Call
-            </a>
-          </div>
-        </div> */}
+
       </div>
     </section>
   )
