@@ -11,6 +11,7 @@ import FAQSection from '@/components/faq-section'
 import ContactForm from '@/components/contact-form'
 import CTASection from '@/components/cta-section'
 import Footer from '@/components/footer'
+import TrainingCategories from '@/components/training-categories'
 
 export default function Home() {
   return (
@@ -18,9 +19,11 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
-       <WhyChooseUs />
 
         <LearningPaths />
+               <WhyChooseUs />
+
+        <TrainingCategories/>
         {/* <FeaturesSection /> */}
         <PricingSection />
         <TestimonialsSection />
