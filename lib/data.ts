@@ -125,7 +125,7 @@ export const pricing = [
     id: 1,
     badge: "Best for Students",
     title: "Summer Training",
-    price: "₹5,000",
+    price: "₹3,000",
     features: [
       "5 Hour Daily Classes",
       "Recovery Classes Included",
@@ -141,7 +141,7 @@ export const pricing = [
     id: 2,
     badge: "Skill Booster",
     title: "Industrial Training",
-    price: "₹5,000",
+    price: "₹3,000",
     features: [
       "Industry Exposure",
       "Practical Focused Sessions",
@@ -157,7 +157,7 @@ export const pricing = [
     id: 3,
     badge: "Career Focused",
     title: "Job-Ready Training",
-    price: "₹25,000",
+    price: "₹15,000",
     features: [
       "Placement Assistance",
       "Mock Interviews",
@@ -166,7 +166,7 @@ export const pricing = [
       "Job-Ready Curriculum",
       "Certificates Included"
     ],
-    buttonText: "Enroll Now",
+    buttonText: "Comming Soon",
     isPopular: false
   }
 ];

@@ -148,7 +148,7 @@ export default function PricingSection() {
                         : "bg-secondary hover:bg-secondary/80 text-foreground border border-border hover:border-primary/30"
                     }`}
                   >
-                    Enroll Now
+                    {plan.buttonText}
                   </Button>
                 </div>
               </div>

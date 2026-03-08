@@ -467,7 +467,7 @@ const footerRef = useRef<HTMLElement | null>(null)
               <div className="ztc-contact-icon"><MapPin size={13} /></div>
               <div className="ztc-contact-text">
                 <div style={{ fontSize: '0.6rem', letterSpacing: '0.1em', color: 'rgba(255,255,255,0.3)', marginBottom: '2px' }}>LOCATION</div>
-                New Delhi, India
+                Lucknow, India
               </div>
             </div>
           </div>
