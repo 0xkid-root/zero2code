@@ -1,4 +1,4 @@
-# 🚀 Launch Checklist - SkillManthan Landing Page
+# 🚀 Launch Checklist - ZeroTwoCode Landing Page
 
 Complete this checklist before launching your landing page to production.
 

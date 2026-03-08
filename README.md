@@ -1,4 +1,4 @@
-# SkillManthan - Industry-Oriented IT Training Landing Page
+# ZeroTwoCode - Industry-Oriented IT Training Landing Page
 
 A modern, fully responsive, and SEO-optimized landing page built with **Next.js 16**, **Tailwind CSS**, **shadcn/ui**, and **TypeScript**.
 
@@ -20,7 +20,7 @@ A modern, fully responsive, and SEO-optimized landing page built with **Next.js 
 - **Header** - Sticky navigation with mobile menu
 - **Hero** - Compelling headline with stats and CTAs
 - **Learning Paths** - 6 career tracks (AWS, Python, Java, Android, Digital Marketing, Full-Stack)
-- **Features** - Why choose SkillManthan + Benefits + Flexible formats
+- **Features** - Why choose ZeroTwoCode + Benefits + Flexible formats
 - **Pricing** - 3 pricing tiers with features list
 - **Testimonials** - 3 student success stories with ratings
 - **FAQ** - Accordion-style Q&A section
@@ -331,6 +331,6 @@ Built with:
 
 ---
 
-**Ready to launch your SkillManthan landing page?** Start with the quick start guide above, customize your content, and deploy to Vercel! 🚀
+**Ready to launch your ZeroTwoCode landing page?** Start with the quick start guide above, customize your content, and deploy to Vercel! 🚀
 
 **Last Updated**: March 2026

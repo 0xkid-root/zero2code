@@ -16,7 +16,7 @@ export const features = [
   {
     id: 1,
     title: "Managing tech learning is complex",
-    description: "Learning tech skills involves managing multiple platforms, outdated resources, and unclear learning paths. SkillManthan simplifies this with curated, industry-aligned content and structured learning journeys."
+    description: "Learning tech skills involves managing multiple platforms, outdated resources, and unclear learning paths. ZeroTwoCode simplifies this with curated, industry-aligned content and structured learning journeys."
   },
   {
     id: 2,

@@ -1,15 +1,15 @@
-# SkillManthan Landing Page - Deployment Guide
+# ZeroTwoCode Landing Page - Deployment Guide
 
 ## 🎯 Quick Start
 
-Your SkillManthan landing page is ready to deploy! Follow these steps to go live.
+Your ZeroTwoCode landing page is ready to deploy! Follow these steps to go live.
 
 ## 📦 What's Included
 
 ✅ **8 Complete Sections**
 - Hero with compelling value prop and stats
 - Learning paths with 6 career tracks
-- Why choose SkillManthan + benefits
+- Why choose ZeroTwoCode + benefits
 - Flexible training formats
 - Pricing with 3 tiers
 - Student testimonials (3 success stories)
@@ -41,7 +41,7 @@ Your SkillManthan landing page is ready to deploy! Follow these steps to go live
    ```bash
    git init
    git add .
-   git commit -m "Initial commit: SkillManthan landing page"
+   git commit -m "Initial commit: ZeroTwoCode landing page"
    git branch -M main
    git remote add origin https://github.com/YOUR_USERNAME/skillmanthan.git
    git push -u origin main

@@ -1,4 +1,4 @@
-# ⚡ Quick Start Guide - SkillManthan Landing Page
+# ⚡ Quick Start Guide - ZeroTwoCode Landing Page
 
 Get your landing page up and running in 5 minutes!
 

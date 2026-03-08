@@ -1,4 +1,4 @@
-# 📚 Documentation Index - SkillManthan Landing Page
+# 📚 Documentation Index - ZeroTwoCode Landing Page
 
 A complete guide to all documentation and files in this project.
 

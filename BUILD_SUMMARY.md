@@ -1,8 +1,8 @@
-# 🎉 Build Summary - SkillManthan Landing Page
+# 🎉 Build Summary - ZeroTwoCode Landing Page
 
 ## What Was Built
 
-A complete, production-ready landing page for **SkillManthan**, an industry-oriented IT training platform. Everything is built with modern best practices and ready to deploy.
+A complete, production-ready landing page for **ZeroTwoCode**, an industry-oriented IT training platform. Everything is built with modern best practices and ready to deploy.
 
 ---
 

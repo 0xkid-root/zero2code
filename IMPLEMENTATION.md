@@ -1,4 +1,4 @@
-# SkillManthan Landing Page - Implementation Guide
+# ZeroTwoCode Landing Page - Implementation Guide
 
 ## Project Overview
 

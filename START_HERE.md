@@ -1,8 +1,8 @@
-# 🎯 START HERE - SkillManthan Landing Page
+# 🎯 START HERE - ZeroTwoCode Landing Page
 
 ## Welcome! 👋
 
-Your **SkillManthan landing page** is ready. Follow these steps to get live.
+Your **ZeroTwoCode landing page** is ready. Follow these steps to get live.
 
 ---
 
@@ -211,6 +211,6 @@ Everything is configured and ready to go.
 
 ---
 
-**Let's make SkillManthan successful! 🚀**
+**Let's make ZeroTwoCode successful! 🚀**
 
 *Questions? Check [DOCUMENTATION_INDEX.md](./DOCUMENTATION_INDEX.md) for all guides*
