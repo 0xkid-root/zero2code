@@ -201,22 +201,62 @@ export const testimonials = [
 export const faqs = [
   {
     id: 1,
-    question: "What is a duration of the training program?",
-    answer: "Most of our programs range from 12-24 weeks depending on the track you choose. Each track has specific timelines outlined during enrollment, and you can study at your own pace with structured milestones."
+    question: "What is the duration of the ZeroTwoCode training programs?",
+    answer:
+      "Most ZeroTwoCode training programs run between 4 to 8 weeks depending on the course you choose. Each program includes structured modules, real-world projects, and guided learning to help you become job-ready."
   },
   {
     id: 2,
-    question: "Is post-placement assistance provided?",
-    answer: "Yes, we provide comprehensive placement assistance including resume building, interview preparation, and direct connections with hiring partners. Our career team works with you even after program completion."
+    question: "How can ZeroTwoCode help me start my tech career?",
+    answer:
+      "ZeroTwoCode provides industry-focused training, hands-on projects, and mentorship from experienced professionals. Our programs are designed to help you gain practical skills and confidently start a career in the tech industry."
   },
   {
     id: 3,
-    question: "Are there any coding pre-requisites?",
-    answer: "No prerequisites required for beginner tracks. For advanced tracks, basic programming knowledge is helpful. We offer foundation modules to get everyone up to speed."
+    question: "Do I need prior coding experience to join?",
+    answer:
+      "No prior coding experience is required for beginner programs. We start from the fundamentals and gradually move to advanced topics. Some advanced courses may recommend basic programming knowledge."
   },
   {
     id: 4,
-    question: "Can I get a refund?",
-    answer: "We offer a 7-day money-back guarantee if you're not satisfied with the course. After that, refunds are available on a case-by-case basis depending on course progress."
+    question: "Will I receive a certificate after completing the program?",
+    answer:
+      "Yes. After successfully completing the course and projects, you will receive a ZeroTwoCode certificate that validates your skills and program completion."
+  },
+  {
+    id: 5,
+    question: "Does ZeroTwoCode provide placement assistance?",
+    answer:
+      "Yes. We provide placement assistance including resume building, interview preparation, portfolio guidance, and connections with hiring partners to help you secure job opportunities."
+  },
+  {
+    id: 6,
+    question: "What technologies will I learn in the programs?",
+    answer:
+      "Depending on the course, you may learn technologies such as JavaScript, React.js, Node.js, MongoDB, AWS, DevOps tools, and modern full-stack development practices."
+  },
+  {
+    id: 7,
+    question: "Are the ZeroTwoCode training programs online or offline?",
+    answer:
+      "All ZeroTwoCode programs are currently delivered online, allowing you to learn from anywhere while still receiving structured training and mentor support."
+  },
+  {
+    id: 8,
+    question: "What kind of support will I get during the course?",
+    answer:
+      "Students receive continuous support including mentor guidance, doubt-clearing sessions, project reviews, and access to learning resources throughout the program."
+  },
+  {
+    id: 9,
+    question: "Will I work on real-world projects during the program?",
+    answer:
+      "Yes. Our programs include practical, real-world projects that help you build a strong portfolio and gain hands-on experience with modern technologies."
+  },
+  {
+    id: 10,
+    question: "Is there a refund policy?",
+    answer:
+      "Yes. ZeroTwoCode offers a 7-day money-back guarantee if you are not satisfied with the program. After that, refund requests may be reviewed depending on the course progress."
   }
 ];

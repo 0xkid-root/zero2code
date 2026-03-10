@@ -27,13 +27,16 @@ const footerRef = useRef<HTMLElement | null>(null)
   }, [])
 
   const programs = [
-    { label: 'AWS Training', tag: 'HOT' },
-    { label: 'Python Development', tag: null },
-    { label: 'Java Development', tag: null },
-    { label: 'Full-Stack Development', tag: 'NEW' },
+    { label: 'Summar Training', tag: 'HOT' },
+    { label: 'Vocational Training', tag: null },
+    { label: 'Winter Training', tag: null },
+    { label: 'Apprenticeship', tag: 'NEW' },
+    { label: 'Industrial Training', tag: null },
+    { label: 'PD & Skill Development', tag: null },
+
   ]
 
-  const resources = ['Blog', 'Success Stories', 'FAQ', 'Pricing']
+  const resources = ['Blog', 'Success Stories', 'FAQ', 'Career','Project']
 
   return (
     <>
@@ -396,14 +399,14 @@ const footerRef = useRef<HTMLElement | null>(null)
           <div className="ztc-col">
             <div className="ztc-label">
               <Zap size={10} />
-              Est. 2024
+              Est. 2025
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
               <div className="ztc-logo-mark">Z</div>
               <span className="ztc-logo-name">ZeroTwoCode</span>
             </div>
             <p style={{ fontSize: '0.78rem', color: 'rgba(255,255,255,0.45)', lineHeight: '1.7', marginBottom: '0.5rem' }}>
-              Industry-oriented IT training for career transformation.
+              ZeroTwoCode provides industry-focused IT training programs designed to help students and professionals build real-world skills and launch successful tech careers.
             </p>
             <div className="ztc-socials">
               <a href="#" className="ztc-social-btn" aria-label="LinkedIn"><Linkedin size={14} /></a>
