@@ -22,20 +22,26 @@ export default function Header() {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">
           <Link href="#courses" className="text-foreground hover:text-primary transition">
+            About Us
+          </Link>
+          <Link href="#courses" className="text-foreground hover:text-primary transition">
             Courses
           </Link>
           <Link href="#outcomes" className="text-foreground hover:text-primary transition">
-            Training Programs
+            Service
           </Link>
           <Link href="#pricing" className="text-foreground hover:text-primary transition">
-            Pricing
+            Project
           </Link>
           <Link href="#testimonials" className="text-foreground hover:text-primary transition">
-            Testimonials
+            Blog
           </Link>
 
           <Link href="#faq" className="text-foreground hover:text-primary transition">
-            FAQ
+            Career
+          </Link>
+          <Link href="#faq" className="text-foreground hover:text-primary transition">
+            Contact Us
           </Link>
         </div>
 
@@ -61,16 +67,22 @@ export default function Header() {
         <div className="md:hidden bg-white border-t border-border">
           <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-4">
             <Link href="#courses" className="text-foreground hover:text-primary transition py-2">
-              Courses
+              About Us
             </Link>
             <Link href="#outcomes" className="text-foreground hover:text-primary transition py-2">
-              Outcomes
+              Courses
             </Link>
             <Link href="#pricing" className="text-foreground hover:text-primary transition py-2">
-              Pricing
+              Service
             </Link>
             <Link href="#faq" className="text-foreground hover:text-primary transition py-2">
-              FAQ
+              Project
+            </Link>
+              <Link href="#faq" className="text-foreground hover:text-primary transition py-2">
+              Blog
+            </Link>
+            <Link href="#faq" className="text-foreground hover:text-primary transition py-2">
+              Career
             </Link>
             <Button className="bg-primary hover:bg-primary/90 text-white rounded-full w-full">
               Get Started

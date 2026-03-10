@@ -231,7 +231,7 @@ export default function HeroSection() {
         </div>
 
         {/* ── STATS ── */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-12 border-t border-border"
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-12 border-t border-border"
           style={{ animation: 'fadeUp 0.8s ease-out 0.4s both' }}>
           {[
             { icon: <TrendingUp className="w-6 h-6 text-primary" />, value: '98%', label: 'Placement Rate', sub: 'Students secured jobs within 6 months' },
@@ -251,7 +251,7 @@ export default function HeroSection() {
               <p className="text-sm text-muted-foreground/80">{sub}</p>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
 
       {/* ── Keyframes ── */}
