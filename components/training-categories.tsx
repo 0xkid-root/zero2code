@@ -18,7 +18,7 @@ const categories = [
     desc: "Turn your winter break into a career boost — intensive sessions, project builds and industry exposure packed into 45 focused days.",
   },
   {
-    id: 4, title: "Apprenticeship", tag: "6 Months", price: "₹25,000", featured: false,
+    id: 4, slug: "apprenticeship", title: "Apprenticeship", tag: "6 Months", price: "₹25,000", featured: false,
     icon: <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6"><path d="M20 6h-2.18c.07-.44.18-.87.18-1.33C18 2.54 15.6 1 13 1c-1.6 0-3.05.54-4.12 1.44A4.97 4.97 0 006 6H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.63 0 3 .89 3 2s-1.37 2-3 2-3-.89-3-2 1.37-2 3-2zm0 12l-4-4h2.5V9h3v4H17l-4 4z"/></svg>,
     desc: "6 months working shoulder-to-shoulder with senior professionals — the closest thing to a real job before you actually get one.",
   },

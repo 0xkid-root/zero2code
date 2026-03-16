@@ -26,23 +26,66 @@ const syllabus = [
   {
     title: "Technology Session",
     items: [
-      "MERN Stack (MongoDB, Express JS, React JS, Node JS)",
-      "Python With Django",
-      ".NET MVC (C# Programming, ADO .NET, MSSQL)",
-      "Java Full Stack (Java, Hibernate, Spring Boot, Oracle)",
-      "Android with Java  ||  Flutter  ||  AI and ML",
+      "MERN Stack (MongoDB, Express JS, React JS, Node JS) || Python With Django",
+      ".NET MVC (C# Programming, ADO .NET, MSSQL) || Java Full Stack (Java, Hibernate, Spring Boot, Oracle)",
+      "Android with Java || Flutter || AI and ML",
     ],
+  },
+  {
+    title: "Project Session",
+    items: ["Multiple Minor Project, One Major Live Project With min. 20 Modules"],
+  },
+  {
+    title: "Extra Activities",
+    items: [
+      "Gain professional edge with HR skills, Personality Development Sessions, Special Classes of AI/ML and IoT, Freelancing, Resume building",
+      "Graphic Designing, Digital Marketing, Mock Interviews",
+    ],
+  },
+  {
+    title: "Project Submission & Hosting",
+    items: ["Get a unique live project URL (active for 1 year) to showcase your work anytime."],
+  },
+  {
+    title: "Farewell & Award Distribution",
+    items: ["Celebrate success with Star Performer, Best Performer, Outstanding Trainee, and Scholarship."],
   },
 ];
 
 const alsoAvailable = [
-  "Winter Training for CS/IT",
-  "Winter Training for Electronics",
-  "Winter Training for Electrical",
+  "Summer Training for Electronics",
+  "Summer Training for Electrical",
+  "Summer Training for CS/IT",
+  "Apprenticeship Program for CS/IT",
 ];
 
+const popularLanguages = [
+  { label: "HTML5", color: "bg-orange-100 text-orange-600" },
+  { label: "CSS3", color: "bg-blue-100 text-blue-600" },
+  { label: ".NET", color: "bg-purple-100 text-purple-600" },
+  { label: "Flutter", color: "bg-cyan-100 text-cyan-600" },
+  { label: "Python", color: "bg-yellow-100 text-yellow-600" },
+  { label: "Node.js", color: "bg-green-100 text-green-600" },
+];
 
-export default function WinterTrainingPage() {
+const eligibility = [
+  "Diploma in Computer Science (C.S.)",
+  "Diploma in Information Technology (I.T.)",
+  "B.Tech / B.E in CSE (Computer Science & Engineering)",
+  "B.Tech / B.E in IT (Information Technology)",
+  {
+    label: "B.Tech in CSE with Specializations such as:",
+    sub: [
+      "Artificial Intelligence (AI)",
+      "Machine Learning (ML)",
+      "Data Science",
+      "Internet of Things (IoT)",
+      "Cybersecurity",
+    ],
+  },
+];
+
+export default function VocationalTrainingPage() {
   const [enquiryOpen, setEnquiryOpen] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", phone: "", course: "", message: "" });
   const [focused, setFocused] = useState("");
@@ -71,138 +114,68 @@ export default function WinterTrainingPage() {
         </button>
       </nav>
 
-      {/* ── Hero Section ── */}
-      <div className="bg-[#EEEBE4] px-10 py-16 max-w-7xl mx-auto flex items-center justify-between gap-10">
-
-        {/* Left Text */}
-        <div className="max-w-lg flex-shrink-0">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 rounded-full px-4 py-2 mb-6 bg-[#F5D5C8] border border-[#F0C4B0]">
-            <span className="w-2 h-2 rounded-full bg-[#F05A28]" />
-            <span className="text-[#F05A28] text-sm font-semibold">Transform Your Tech Career</span>
-          </div>
-
-          <h1 className="text-5xl font-black leading-tight text-[#1C1C1C] mb-3">
-            Industry-Ready<br />
-            <span className="text-[#F05A28]">IT Training</span><br />
-            Programs
-          </h1>
-
-          <p className="text-[#F05A28] font-semibold text-base mb-3">
-            Technologies You'll Master: <span className="text-[#1C1C1C] font-black">React.js</span>
+      {/* ── Hero Banner ── */}
+      <div className="relative overflow-hidden py-10 px-8 text-center bg-gradient-to-r from-[#F05A28] via-[#FF8C5A] to-[#C8E8F8]">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#F05A28]/80 to-[#C8E0F0]/60" />
+        <div className="relative z-10">
+          <p className="text-xs text-white/70 tracking-widest uppercase mb-1">
+            Home → Vocational Training for CS/IT
           </p>
-
-          <p className="text-sm text-[#5A5A5A] leading-relaxed mb-8">
-            Learn from expert instructors and gain hands-on experience with the latest technologies.
-            Join <strong className="text-[#1C1C1C]">thousands of students</strong> who transformed
-            their careers with Techpile.
-          </p>
-
-          <div className="flex items-center gap-4 mb-8">
-            <button
-              onClick={() => setEnquiryOpen(true)}
-              className="flex items-center gap-2 px-6 py-3 rounded-full bg-[#F05A28] text-white text-sm font-bold hover:bg-[#D94E20] transition-all duration-200 shadow-lg shadow-[#F05A28]/30 hover:scale-[1.02]"
-            >
-              Register Now →
-            </button>
-            <button className="flex items-center gap-2 px-6 py-3 rounded-full bg-white border border-[#DDD8CF] text-[#1C1C1C] text-sm font-semibold hover:border-[#F05A28] hover:text-[#F05A28] transition-all duration-200 shadow-sm">
-              <span className="text-[#F05A28]">▶</span> Our Programs
-            </button>
-          </div>
-
-          {/* Enrolled */}
-          <div className="flex items-center gap-3">
-            <div className="flex -space-x-2">
-              {["bg-[#F05A28]", "bg-[#D94E20]", "bg-[#FF7A50]", "bg-[#C04010]"].map((c, i) => (
-                <div key={i} className={`w-8 h-8 rounded-full border-2 border-[#EEEBE4] ${c}`} />
-              ))}
-            </div>
-            <p className="text-sm text-[#5A5A5A]">
-              <span className="font-black text-[#1C1C1C]">50,000+</span> students enrolled
-            </p>
-          </div>
-        </div>
-
-        {/* Right — Big Hero Image */}
-        <div className="hidden lg:block relative flex-shrink-0 w-[520px]">
-          {/* Main big image */}
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-[#F05A28]/15 border-4 border-white">
-            <img
-              src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=900&q=80"
-              alt="Winter Training CS IT Students"
-              className="w-full h-[380px] object-cover"
-            />
-            {/* Overlay gradient at bottom */}
-            <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-[#1C1C1C]/70 to-transparent" />
-            {/* Bottom label */}
-            <div className="absolute bottom-5 left-5 right-5 flex items-center justify-between">
-              <div>
-                <p className="text-white font-black text-base">Winter Training 2025</p>
-                <p className="text-white/70 text-xs">CS & IT — Hands-on Learning</p>
-              </div>
-              <div className="bg-[#F05A28] text-white text-xs font-bold px-3 py-1.5 rounded-full">
-                Enrolling Now
-              </div>
-            </div>
-          </div>
-
-          {/* Floating stat cards */}
-          <div className="absolute -top-4 -left-6 bg-white rounded-2xl shadow-lg border border-[#DDD8CF] px-4 py-3 flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-[#F5D5C8] flex items-center justify-center text-xl">🎓</div>
-            <div>
-              <p className="text-[#1C1C1C] font-black text-sm">50,000+</p>
-              <p className="text-[#5A5A5A] text-xs">Students Trained</p>
-            </div>
-          </div>
-
-          <div className="absolute -bottom-4 -right-4 bg-white rounded-2xl shadow-lg border border-[#DDD8CF] px-4 py-3 flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-[#F5D5C8] flex items-center justify-center text-xl">⭐</div>
-            <div>
-              <p className="text-[#1C1C1C] font-black text-sm">4.9 Rating</p>
-              <p className="text-[#5A5A5A] text-xs">2900+ Google Reviews</p>
-            </div>
-          </div>
+          <h1 className="text-4xl font-black text-white drop-shadow-md">Vocational Training for CS/IT</h1>
         </div>
       </div>
 
-      {/* ── Page Body: 2-col layout ── */}
-      {/* We use a wrapper that allows the sidebar to be sticky */}
-      <div className="max-w-7xl mx-auto px-6 pb-12">
+      {/* ── Main 2-col layout ── */}
+      <div className="max-w-7xl mx-auto px-6 py-10">
         <div className="flex gap-8 items-start">
 
-          {/* ── LEFT: scrollable content ── */}
+          {/* ── LEFT CONTENT ── */}
           <div className="flex-1 min-w-0 space-y-6">
+
+            {/* Hero Image — real classroom photo like screenshot */}
+            <div className="rounded-2xl overflow-hidden border border-[#DDD8CF] shadow-md">
+              <img
+                src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=900&q=80"
+                alt="Vocational Training CS IT Students at Techpile"
+                className="w-full h-[340px] object-cover object-top"
+              />
+            </div>
 
             {/* About Card */}
             <div className="bg-white rounded-2xl border border-[#DDD8CF] p-8 shadow-sm">
-              <h2 className="text-xl font-black text-[#1C1C1C] mb-1">Winter Training for CS and IT Students</h2>
+              <h2 className="text-xl font-black text-[#1C1C1C] mb-1">
+                Vocational Training for CS and IT Students
+              </h2>
               <div className="w-8 h-1 rounded-full bg-[#F05A28] mb-5" />
 
               <h3 className="font-bold text-[#1C1C1C] mb-2">About</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed mb-4">
-                Winter Training in CS &amp; IT at Techpile is a career-focused, hands-on learning program
-                specially designed for B.Tech, Diploma, BCA, and MCA students. This program goes beyond
-                theory, enabling learners to develop industry-ready technical skills through practical
-                exposure and real-world projects. Recognized as the top company for Winter Training in
-                CS &amp; IT, Techpile is trusted by thousands of students for its expert-led sessions and
-                career-oriented training. If you are looking for the best company for Winter Training or
-                the best company for Winter Training in Lucknow, Techpile is the right choice to kickstart
-                your IT career.
+                Vocational Training in CS &amp; IT at Techpile is a career-focused, hands-on learning program
+                specially designed for B.Tech, Diploma, BCA, and MCA students. This program goes beyond theory,
+                enabling learners to develop industry-ready technical skills through practical exposure and
+                real-world projects. Recognized as the top company for Vocational Training in CS &amp; IT,
+                Techpile is trusted by thousands of students for its expert-led sessions and career-oriented
+                training. If you are looking for the best company for Vocational Training or the best company
+                for Vocational Training in Lucknow, Techpile is the right choice to kickstart your IT career.
               </p>
               <p className="text-sm text-[#5A5A5A] leading-relaxed mb-6">
-                Through intensive Winter Training in CS &amp; IT at Techpile, students gain hands-on experience
-                with live projects and expert mentorship. By the end of the program, learners develop the
-                confidence to handle real-time challenges, showcase industry-level projects during interviews,
-                and prepare effectively for a successful IT career. Recognized as the best company for Winter
-                Training in Lucknow, Techpile ensures students build strong technical and professional skills.
+                Through intensive Vocational Training in CS &amp; IT at Techpile, students gain hands-on
+                experience with live projects and expert mentorship. This career-focused training helps
+                participants apply core computer science and IT concepts in real-world scenarios. By the end
+                of the program, learners develop the confidence to handle real-time challenges, showcase
+                industry-level projects during interviews, and prepare effectively for a successful IT career.
+                Recognized as the best company for Vocational Training in Lucknow, Techpile ensures students
+                build strong technical and professional skills for their future!
               </p>
 
               <h3 className="font-bold text-[#1C1C1C] mb-2">Program Tenure &amp; Timing</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed mb-6">
-                Techpile's Winter Training Program in CS &amp; IT starts every year in June/July and continues
-                for 4 to 6 weeks, wrapping up by August/September. The schedule is designed to align with
-                college examinations and academic calendars, ensuring maximum convenience for B.Tech, Diploma,
-                BCA, and MCA students.
+                Techpile's Vocational Training Program in CS &amp; IT starts every year in June/July and
+                continues for 4 to 6 weeks, wrapping up by August/September. The schedule is designed to
+                align with college examinations, academic calendars, and batch availability, ensuring maximum
+                convenience for B.Tech, Diploma, BCA, and MCA students. Recognized as the best company for
+                Vocational Training in Lucknow, Techpile provides a flexible, career-oriented learning
+                experience that helps students build industry-ready skills within a short duration.
               </p>
 
               {/* Star Rating */}
@@ -221,17 +194,21 @@ export default function WinterTrainingPage() {
 
             {/* Syllabus Card */}
             <div className="bg-white rounded-2xl border border-[#DDD8CF] p-8 shadow-sm">
-              <h2 className="text-xl font-black text-[#1C1C1C] mb-1">Winter Training Syllabus for CS and IT</h2>
+              <h2 className="text-xl font-black text-[#1C1C1C] mb-1">
+                Vocational Training Syllabus for CS and IT
+              </h2>
               <div className="w-8 h-1 rounded-full bg-[#F05A28] mb-6" />
-              <div className="space-y-6">
-                {syllabus.map((s) => (
+              <div className="space-y-5">
+                {syllabus.map((s, idx) => (
                   <div key={s.title} className="flex gap-4">
                     <div className="flex flex-col items-center pt-1.5">
                       <div className="w-3 h-3 rounded-full bg-green-500 flex-shrink-0" />
-                      <div className="w-0.5 bg-[#DDD8CF] flex-1 mt-1" />
+                      {idx < syllabus.length - 1 && (
+                        <div className="w-0.5 bg-[#DDD8CF] flex-1 mt-1" />
+                      )}
                     </div>
                     <div className="pb-4">
-                      <h3 className="font-bold text-[#1C1C1C] mb-2">{s.title}</h3>
+                      <h3 className="font-bold text-[#1C1C1C] mb-1.5">{s.title}</h3>
                       {s.items.map((item) => (
                         <p key={item} className="text-sm text-[#5A5A5A] leading-relaxed mb-1">{item}</p>
                       ))}
@@ -241,14 +218,74 @@ export default function WinterTrainingPage() {
               </div>
             </div>
 
-            {/* Fee Cards */}
+            {/* Program Tenure & How to Join — separate card like screenshot */}
+            <div className="bg-white rounded-2xl border border-[#DDD8CF] p-8 shadow-sm">
+              <h3 className="font-bold text-[#1C1C1C] mb-2">Program Tenure &amp; Timing</h3>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed mb-5">
+                Techpile's Vocational Training Program in CS &amp; IT starts every year in June/July and
+                continues for 4 to 6 weeks, wrapping up by August/September. The schedule is designed to
+                align with college examinations, academic calendars, and batch availability, ensuring maximum
+                convenience for B.Tech, Diploma, BCA, and MCA students. Recognized as the best company for
+                Vocational Training in Lucknow, Techpile provides a flexible, career-oriented learning
+                experience that helps students build industry-ready skills within a short duration.
+              </p>
+
+              <h3 className="font-bold text-[#1C1C1C] mb-2">How to Join?</h3>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed mb-5">
+                Enrolling is simple! Students can apply online directly through our website or visit the
+                Techpile campus to complete the registration process.
+              </p>
+              <div className="flex gap-3">
+                <button
+                  onClick={() => setEnquiryOpen(true)}
+                  className="px-5 py-2.5 rounded-xl bg-[#F05A28] text-white text-sm font-bold hover:bg-[#D94E20] transition-colors duration-200 shadow-md shadow-[#F05A28]/25"
+                >
+                  Apply Online →
+                </button>
+                <a
+                  href="tel:+917007237006"
+                  className="px-5 py-2.5 rounded-xl border border-[#DDD8CF] text-[#1C1C1C] text-sm font-semibold hover:border-[#F05A28] hover:text-[#F05A28] transition-all duration-200"
+                >
+                  📞 Call Us
+                </a>
+              </div>
+            </div>
+
+            {/* Who Can Join */}
+            <div className="bg-white rounded-2xl border border-[#DDD8CF] p-8 shadow-sm">
+              <h2 className="text-xl font-black text-[#1C1C1C] mb-1">Who can Join?</h2>
+              <div className="w-8 h-1 rounded-full bg-[#F05A28] mb-4" />
+              <p className="text-sm text-[#5A5A5A] leading-relaxed mb-4">
+                The program is open to students pursuing Diploma, Undergraduate, or Postgraduate degrees in
+                Computer Science, Information Technology, or related domain.
+              </p>
+              <p className="font-semibold text-[#1C1C1C] text-sm mb-3">Available for:</p>
+              <ol className="space-y-2 list-decimal list-inside text-sm text-[#5A5A5A]">
+                {eligibility.map((e, i) =>
+                  typeof e === "string" ? (
+                    <li key={i}>{e}</li>
+                  ) : (
+                    <li key={i}>
+                      {e.label}
+                      <ol className="mt-1.5 ml-6 space-y-1 list-decimal list-inside">
+                        {e.sub.map((s) => (
+                          <li key={s}>{s}</li>
+                        ))}
+                      </ol>
+                    </li>
+                  )
+                )}
+              </ol>
+            </div>
+
+            {/* Fee Structure */}
             <div className="bg-white rounded-2xl border border-[#DDD8CF] p-8 shadow-sm">
               <h2 className="text-xl font-black text-[#1C1C1C] mb-1">Fee Structure</h2>
               <div className="w-8 h-1 rounded-full bg-[#F05A28] mb-6" />
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 {[
                   { label: "Basic Session", price: "₹4,999", duration: "4 Weeks" },
-                  { label: "Technology Session", price: "₹7,999", duration: "6 Weeks", highlight: true },
+                  { label: "Technology Session", price: "₹7,000", duration: "6 Weeks", highlight: true },
                   { label: "Full Program", price: "₹10,999", duration: "8 Weeks" },
                 ].map((f) => (
                   <div
@@ -275,16 +312,15 @@ export default function WinterTrainingPage() {
             </div>
           </div>
 
-          {/* ── RIGHT: sticky sidebar ── */}
-          <div className="w-[320px] flex-shrink-0">
-            {/* This outer div is sticky */}
+          {/* ── RIGHT STICKY SIDEBAR ── */}
+          <div className="w-[300px] flex-shrink-0">
             <div className="sticky top-[72px] space-y-5">
 
-              {/* Enroll Card */}
+              {/* Enroll Card — matching screenshot exactly */}
               <div className="bg-white rounded-2xl border border-[#DDD8CF] p-6 shadow-sm">
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-lg font-black text-green-500">Winter Training</h3>
-                  <span className="text-xs text-[#5A5A5A] bg-[#EEEBE4] border border-[#DDD8CF] rounded-full px-3 py-1">
+                <div className="flex items-center justify-between mb-5">
+                  <h3 className="text-lg font-black text-green-500">Vocational Training</h3>
+                  <span className="text-xs text-[#5A5A5A] bg-[#EEEBE4] border border-[#DDD8CF] rounded-full px-3 py-1 whitespace-nowrap">
                     Limited Seats
                   </span>
                 </div>
@@ -310,7 +346,7 @@ export default function WinterTrainingPage() {
                 </button>
               </div>
 
-              {/* Benefits */}
+              {/* Additional Benefits */}
               <div className="bg-white rounded-2xl border border-[#DDD8CF] p-6 shadow-sm">
                 <h3 className="font-black text-[#1C1C1C] mb-4">Additional Benefits</h3>
                 <ul className="space-y-3">
@@ -341,8 +377,8 @@ export default function WinterTrainingPage() {
                     <span className="text-[#F05A28] text-base mt-0.5 flex-shrink-0">📍</span>
                     <div>
                       <p className="font-semibold text-[#1C1C1C]">Address</p>
-                      <p className="text-[#5A5A5A]">Plot no 43 Vikas Nagar Sector</p>
-                      <p className="text-[#5A5A5A]">5 Ring Road Lucknow 226022</p>
+                      <p className="text-[#5A5A5A]">Plot no 43 Vikas Nagar Secotor</p>
+                      <p className="text-[#5A5A5A]">5 Ring Road Lucknow Pincode 226022</p>
                     </div>
                   </div>
                   <div className="flex gap-3">
@@ -368,6 +404,18 @@ export default function WinterTrainingPage() {
                     >
                       {a} <span>→</span>
                     </a>
+                  ))}
+                </div>
+              </div>
+
+              {/* Popular Languages */}
+              <div className="bg-white rounded-2xl border border-[#DDD8CF] p-6 shadow-sm">
+                <h3 className="font-black text-[#1C1C1C] mb-4">Popular Languages</h3>
+                <div className="flex flex-wrap gap-2">
+                  {popularLanguages.map((l) => (
+                    <span key={l.label} className={`text-xs font-bold px-3 py-1.5 rounded-lg ${l.color}`}>
+                      {l.label}
+                    </span>
                   ))}
                 </div>
               </div>
@@ -426,12 +474,8 @@ export default function WinterTrainingPage() {
                 <h3 className="text-xl font-black text-[#1C1C1C]">Enquire Now</h3>
                 <div className="w-8 h-1 bg-[#F05A28] rounded-full mt-1.5" />
               </div>
-              <button
-                onClick={() => setEnquiryOpen(false)}
-                className="text-[#5A5A5A] hover:text-[#F05A28] text-xl font-bold transition-colors"
-              >✕</button>
+              <button onClick={() => setEnquiryOpen(false)} className="text-[#5A5A5A] hover:text-[#F05A28] text-xl font-bold transition-colors">✕</button>
             </div>
-
             <div className="space-y-4">
               {[
                 { label: "Full Name", name: "name", type: "text", placeholder: "Your full name" },
@@ -456,7 +500,6 @@ export default function WinterTrainingPage() {
                   />
                 </div>
               ))}
-
               <div className="flex flex-col gap-1.5">
                 <label className="text-sm font-semibold text-[#1C1C1C]">Course <span className="text-[#F05A28]">*</span></label>
                 <select
@@ -470,12 +513,11 @@ export default function WinterTrainingPage() {
                   } ${focused === "course" ? "border-[#F05A28] ring-2 ring-[#F05A28]/10" : "border-[#DDD8CF] hover:border-[#F0C4B0]"}`}
                 >
                   <option value="">-- Select Course --</option>
-                  {["MERN Stack","Python with Django",".NET MVC","Java Full Stack","Android","Flutter","AI and ML"].map((c) => (
+                  {["MERN Stack", "Python with Django", ".NET MVC", "Java Full Stack", "Android", "Flutter", "AI and ML"].map((c) => (
                     <option key={c} value={c}>{c}</option>
                   ))}
                 </select>
               </div>
-
               <div className="flex flex-col gap-1.5">
                 <label className="text-sm font-semibold text-[#1C1C1C]">Message</label>
                 <textarea
@@ -491,7 +533,6 @@ export default function WinterTrainingPage() {
                   }`}
                 />
               </div>
-
               <button
                 type="button"
                 className="w-full py-3.5 rounded-xl bg-[#F05A28] text-white font-black text-sm hover:bg-[#D94E20] transition-colors duration-200 shadow-lg shadow-[#F05A28]/25"
