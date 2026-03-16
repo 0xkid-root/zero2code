@@ -1,18 +1,19 @@
 import { useState, useEffect, useRef } from "react";
+import Link from "next/link";
 
 const categories = [
   {
-    id: 1, title: "Summer Training", tag: "45-60 Days", price: "₹3,000", featured: false,
+    id: 1, slug: "summer-training",title: "Summer Training", tag: "45-60 Days", price: "₹3,000", featured: false,
     icon: <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6"><path d="M12 2a1 1 0 011 1v2a1 1 0 01-2 0V3a1 1 0 011-1zm0 16a1 1 0 011 1v2a1 1 0 01-2 0v-2a1 1 0 011-1zM4.22 4.22a1 1 0 011.42 0l1.42 1.42a1 1 0 01-1.42 1.42L4.22 5.64a1 1 0 010-1.42zm13.72 13.72a1 1 0 011.42 0l.36.35a1 1 0 01-1.42 1.42l-.36-.35a1 1 0 010-1.42zM2 12a1 1 0 011-1h2a1 1 0 010 2H3a1 1 0 01-1-1zm16 0a1 1 0 011-1h2a1 1 0 010 2h-2a1 1 0 01-1-1zM5.64 18.36a1 1 0 010-1.42l1.42-1.42a1 1 0 011.42 1.42l-1.42 1.42a1 1 0 01-1.42 0zM16.95 7.05a1 1 0 010-1.42l1.41-1.41a1 1 0 011.42 1.41l-1.41 1.42a1 1 0 01-1.42 0zM12 7a5 5 0 100 10A5 5 0 0012 7z"/></svg>,
     desc: "Make your summer count — dive into live projects, sharpen your tech skills and walk out job-ready before your peers even start.",
   },
   {
-    id: 2, title: "Vocational Training", tag: "45-60 Days", price: "₹3,000", featured: true,
+    id: 2,slug: "vocational-training", title: "Vocational Training", tag: "45-60 Days", price: "₹3,000", featured: true,
     icon: <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>,
     desc: "Skip the theory overload — this program puts you straight into skill-based tasks that employers actually look for on day one.",
   },
   {
-    id: 3, title: "Winter Training", tag: "45 Days", price: "₹3,000", featured: false,
+    id: 3, slug: "winter-training",title: "Winter Training", tag: "45 Days", price: "₹3,000", featured: false,
     icon: <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>,
     desc: "Turn your winter break into a career boost — intensive sessions, project builds and industry exposure packed into 45 focused days.",
   },
@@ -163,6 +164,8 @@ function TiltCard({ cat, index }) {
           >
             {cat.price}
           </span>
+          <Link href={`/training/${cat.slug}`}>
+
           <button
             className="text-sm font-semibold rounded-full px-5 py-2 border-2 transition-all duration-250"
             style={{
@@ -174,6 +177,7 @@ function TiltCard({ cat, index }) {
           >
             Know More
           </button>
+          </Link>
         </div>
       </div>
 

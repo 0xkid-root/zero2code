@@ -106,9 +106,9 @@ export default function Header() {
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <Button className="bg-primary hover:bg-primary/90 text-white rounded-full px-6">
-            Register
-          </Button>
+         <Button asChild className="bg-primary hover:bg-primary/90 text-white rounded-full px-6">
+  <Link href="/register">Register</Link>
+</Button>
         </div>
 
         {/* Mobile Menu Button */}
