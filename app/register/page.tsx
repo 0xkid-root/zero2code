@@ -25,11 +25,8 @@ export default function RegisterPage() {
   return (
     <div className="min-h-screen bg-[#F5F0EB] font-sans">
 
-      {/* Navbar */}
-            <Header />
-      
-
-
+        <Header />
+  
       {/* Form Section */}
       <div className="px-6 py-12 flex justify-center">
         <div className="w-full max-w-5xl rounded-3xl overflow-hidden shadow-xl border border-[#E8E0D8] bg-white">
@@ -95,7 +92,7 @@ export default function RegisterPage() {
                 <div className="flex flex-col gap-2">
                   <a href="mailto:jaykashyap1115@gmail.com" className="flex items-center gap-2 text-xs text-[#4A4A4A] hover:text-[#F05A28] transition-colors">
                     <span className="text-[#F05A28]">✉</span>
-                    jaykashyap1115@gmail.com
+                    everythinggaurav48@gmail.com
                   </a>
                   <a href="tel:+916392361443" className="flex items-center gap-2 text-xs text-[#4A4A4A] hover:text-[#F05A28] transition-colors">
                     <span className="text-[#F05A28]">📞</span>
@@ -123,7 +120,7 @@ export default function RegisterPage() {
                   </label>
                   <div className={`flex rounded-xl overflow-hidden border-[1.5px] transition-all duration-200 ${focused === "phone" ? "border-[#F05A28] ring-2 ring-[#F05A28]/10" : "border-[#E8E0D8]"}`}>
                     <div className="bg-[#F5F0EB] border-r border-[#E8E0D8] px-4 flex items-center text-xs font-bold text-[#4A4A4A] whitespace-nowrap">
-                      🇮🇳 IN +91
+                      IN +91
                     </div>
                     <input
                       name="phone"
