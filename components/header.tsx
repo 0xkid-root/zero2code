@@ -11,10 +11,10 @@ const navLinks = [
     label: 'Training',
     href: '#training',
     dropdown: [
-      { label: 'Summer Training', href: '#summer-training' },
-      { label: 'Winter Training', href: '#winter-training' },
-      { label: 'Industrial Training', href: '#industrial-training' },
-      { label: 'Apprenticeship', href: '#apprenticeship' },
+      { label: 'Summer Training', href: '/training/summer-training' },
+      { label: 'Winter Training', href: '/training/winter-training' },
+      { label: 'Apprenticeship', href: '/training/apprenticeship' },
+      { label: 'Industrial Training', href: '/training/industrial-training' },
     ],
   },
   {
