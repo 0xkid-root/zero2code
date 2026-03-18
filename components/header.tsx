@@ -52,12 +52,14 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white border-b border-border">
       <nav className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-primary rounded flex items-center justify-center">
-            <span className="text-white font-bold text-lg">Z</span>
+        <Link href="/">
+          <div className="flex items-center gap-2 cursor-pointer">
+            <div className="w-8 h-8 bg-primary rounded flex items-center justify-center">
+              <span className="text-white font-bold text-lg">Z</span>
+            </div>
+            <span className="text-xl font-bold text-foreground">ZeroTwoCode</span>
           </div>
-          <span className="text-xl font-bold text-foreground">ZeroTwoCode</span>
-        </div>
+          </Link>
 
         {/* Desktop Menu */}
         <div ref={dropdownRef} className="hidden md:flex items-center gap-8">
@@ -107,8 +109,8 @@ export default function Header() {
         {/* CTA Button */}
         <div className="hidden md:block">
          <Button asChild className="bg-primary hover:bg-primary/90 text-white rounded-full px-6">
-  <Link href="/register">Register</Link>
-</Button>
+          <Link href="/register">Register</Link>
+         </Button>
         </div>
 
         {/* Mobile Menu Button */}
