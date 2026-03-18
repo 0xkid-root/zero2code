@@ -29,7 +29,7 @@ const navLinks = [
   { label: 'Project', href: '#project' },
   { label: 'Blog', href: '/blog' },
   { label: 'Career', href: '#career' },
-  { label: 'Contact Us', href: '#contact' },
+  { label: 'Contact Us', href: '/contact' },
 ]
 
 export default function Header() {
