@@ -5,6 +5,8 @@ import Image from 'next/image'
 import { ArrowRight, Play, TrendingUp,  BookOpen } from 'lucide-react'
 import {TypeAnimation} from 'react-type-animation'
 import { User, Users, GraduationCap, UserCheck } from "lucide-react";
+import Link from 'next/link'
+
 
 
 export default function HeroSection() {
@@ -124,14 +126,18 @@ export default function HeroSection() {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
+              <Link href="/register">
               <Button
                 size="lg"
-                className="relative group gap-2 bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-6 rounded-2xl shadow-lg hover:shadow-primary/30 hover:shadow-xl transition-all duration-300 overflow-hidden"
+                className="relative group gap-2 bg-primary cursor-pointer text-primary-foreground hover:bg-primary/90 px-8 py-6 rounded-2xl shadow-lg hover:shadow-primary/30 hover:shadow-xl transition-all duration-300 overflow-hidden"
               >
+                
                 <span className="absolute inset-0 translate-x-[-100%] group-hover:translate-x-[100%] bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-700 skew-x-12" />
                 Register Now
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
+                <ArrowRight className="w-2 h-4 group-hover:translate-x-1 transition-transform duration-200" />
+                
               </Button>
+              </Link>
 
               <Button
                 size="lg"

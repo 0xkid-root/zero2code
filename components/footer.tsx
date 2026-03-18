@@ -27,12 +27,12 @@ const footerRef = useRef<HTMLElement | null>(null)
   }, [])
 
   const programs = [
-    { label: 'Summar Training', tag: 'HOT' },
-    { label: 'Vocational Training', tag: null },
-    { label: 'Winter Training', tag: null },
-    { label: 'Apprenticeship', tag: 'NEW' },
-    { label: 'Industrial Training', tag: null },
-    { label: 'PD & Skill Development', tag: null },
+    { label: 'Summar Training', slug: 'summer-training', tag: 'HOT' },
+    { label: 'Vocational Training', slug: 'vocational-training', tag: null },
+    { label: 'Winter Training', slug: 'winter-training', tag: null },
+    { label: 'Apprenticeship', slug: 'apprenticeship', tag: 'NEW' },
+    { label: 'Industrial Training', slug: 'industrial-training', tag: null },
+    { label: 'PD & Skill Development', slug: 'pdskill', tag: null },
 
   ]
 
@@ -423,7 +423,7 @@ const footerRef = useRef<HTMLElement | null>(null)
             {programs.map((p, i) => (
               <a
                 key={i}
-                href="#"
+                href={`/training/${p.slug}`}
                 className="ztc-prog-link"
                 onMouseEnter={() => setHoveredLink(p.label)}
                 onMouseLeave={() => setHoveredLink(null)}
