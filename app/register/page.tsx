@@ -1,4 +1,5 @@
 "use client";
+import Header from "@/components/header";
 import { useState } from "react";
 
 export default function RegisterPage() {
@@ -25,22 +26,8 @@ export default function RegisterPage() {
     <div className="min-h-screen bg-[#F5F0EB] font-sans">
 
       {/* Navbar */}
-      <nav className="flex items-center justify-between px-10 py-4 bg-white border-b border-[#E8E0D8] shadow-sm">
-        <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-lg bg-[#F05A28] flex items-center justify-center text-white font-black text-base">
-            S
-          </div>
-          <span className="font-black text-lg tracking-tight text-[#1A1A1A]">ZeroToCode</span>
-        </div>
-        <div className="hidden md:flex items-center gap-7 text-sm font-medium text-[#4A4A4A]">
-          {["About Us", "Training", "Services", "Projects", "Blog", "Career", "Contact Us"].map((item) => (
-            <a key={item} href="#" className="hover:text-[#F05A28] transition-colors">{item}</a>
-          ))}
-        </div>
-        <button className="px-5 py-2 rounded-full text-sm font-bold text-white bg-[#F05A28] hover:bg-[#E04818] transition-colors">
-          Register
-        </button>
-      </nav>
+            <Header />
+      
 
 
       {/* Form Section */}
