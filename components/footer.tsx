@@ -456,14 +456,14 @@ const footerRef = useRef<HTMLElement | null>(null)
               <div className="ztc-contact-icon"><Mail size={13} /></div>
               <div className="ztc-contact-text">
                 <div style={{ fontSize: '0.6rem', letterSpacing: '0.1em', color: 'rgba(255,255,255,0.3)', marginBottom: '2px' }}>EMAIL</div>
-                <a href="mailto:info@zerotwocode.com">info@zerotwocode.com</a>
+                <a href="mailto:info@zerotwocode.com">zerotwocode.official@gmail.com</a>
               </div>
             </div>
             <div className="ztc-contact-item">
               <div className="ztc-contact-icon"><Phone size={13} /></div>
               <div className="ztc-contact-text">
                 <div style={{ fontSize: '0.6rem', letterSpacing: '0.1em', color: 'rgba(255,255,255,0.3)', marginBottom: '2px' }}>PHONE</div>
-                <a href="tel:+919876543210">+91 9876543210</a>
+                <a href="tel:+919876543210">+91  7570082706</a>
               </div>
             </div>
             <div className="ztc-contact-item">

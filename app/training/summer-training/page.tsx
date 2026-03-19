@@ -94,7 +94,7 @@ export default function SummerTrainingPage() {
       <Header />
 
       {/* ── Hero Banner ── */}
-      <div className="relative overflow-hidden py-8 sm:py-10 px-4 sm:px-8 text-center bg-gradient-to-r from-[#F05A28] via-[#FF8C5A] to-[#C8E8F8]">
+      {/* <div className="relative overflow-hidden py-8 sm:py-10 px-4 sm:px-8 text-center bg-gradient-to-r from-[#F05A28] via-[#FF8C5A] to-[#C8E8F8]">
         <div className="absolute inset-0 bg-gradient-to-br from-[#F05A28]/80 to-[#C8E0F0]/60" />
         <div className="relative z-10">
           <p className="text-xs text-white/70 tracking-widest uppercase mb-1">
@@ -104,7 +104,7 @@ export default function SummerTrainingPage() {
             Summer Training for CS/IT
           </h1>
         </div>
-      </div>
+      </div> */}
 
       {/* ── Main layout ── */}
       {/*
@@ -369,24 +369,23 @@ export default function SummerTrainingPage() {
                     <span className="text-[#F05A28] text-base mt-0.5 flex-shrink-0">✉</span>
                     <div>
                       <p className="font-semibold text-[#1C1C1C]">Email</p>
-                      <p className="text-[#5A5A5A] break-all">zerotocode@gmail.com</p>
-                      <p className="text-[#5A5A5A] break-all">hr@zerotocode.in</p>
+                      <p className="text-[#5A5A5A] break-all"> zerotwocode.official@gmail.com</p>
+                      {/* <p className="text-[#5A5A5A] break-all">hr@zerotocode.in</p> */}
                     </div>
                   </div>
                   <div className="flex gap-3">
                     <span className="text-[#F05A28] text-base mt-0.5 flex-shrink-0">📍</span>
                     <div>
                       <p className="font-semibold text-[#1C1C1C]">Address</p>
-                      <p className="text-[#5A5A5A]">Plot no 43 Vikas Nagar Sector</p>
-                      <p className="text-[#5A5A5A]">5 Ring Road Lucknow Pincode 226022</p>
+                      <p className="text-[#5A5A5A]">Lucknow Pincode 226022</p>
                     </div>
                   </div>
                   <div className="flex gap-3">
                     <span className="text-[#F05A28] text-base mt-0.5 flex-shrink-0">📞</span>
                     <div>
                       <p className="font-semibold text-[#1C1C1C]">Phone</p>
-                      <p className="text-[#5A5A5A]">+91-7007237006</p>
-                      <p className="text-[#5A5A5A]">9140444301 | 9120936936</p>
+                      <p className="text-[#5A5A5A]">+91-7570082706</p>
+                      <p className="text-[#5A5A5A]">916299349073</p>
                     </div>
                   </div>
                 </div>

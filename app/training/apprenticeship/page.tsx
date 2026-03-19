@@ -529,24 +529,24 @@ export default function ApprenticeshipPage() {
                     <span className="text-[#F05A28] text-base mt-0.5 flex-shrink-0">✉</span>
                     <div>
                       <p className="font-semibold text-[#1C1C1C]">Email</p>
-                      <p className="text-[#5A5A5A] break-all">zerotocode@gmail.com</p>
-                      <p className="text-[#5A5A5A] break-all">hr@zerotocode.in</p>
+                      <p className="text-[#5A5A5A] break-all"> zerotwocode.official@gmail.com</p>
+                      {/* <p className="text-[#5A5A5A] break-all">hr@zerotocode.in</p> */}
                     </div>
                   </div>
                   <div className="flex gap-3">
                     <span className="text-[#F05A28] text-base mt-0.5 flex-shrink-0">📍</span>
                     <div>
                       <p className="font-semibold text-[#1C1C1C]">Address</p>
-                      <p className="text-[#5A5A5A]">Plot no 43 Vikas Nagar Sector</p>
-                      <p className="text-[#5A5A5A]">5 Ring Road Lucknow 226022</p>
+                      {/* <p className="text-[#5A5A5A]">Plot no 43 Vikas Nagar Sector</p> */}
+                      <p className="text-[#5A5A5A]"> Lucknow 226022</p>
                     </div>
                   </div>
                   <div className="flex gap-3">
                     <span className="text-[#F05A28] text-base mt-0.5 flex-shrink-0">📞</span>
                     <div>
                       <p className="font-semibold text-[#1C1C1C]">Phone</p>
-                      <p className="text-[#5A5A5A]">+91-7007237006</p>
-                      <p className="text-[#5A5A5A]">9140444301 | 9120936936</p>
+                      <p className="text-[#5A5A5A]">+91-7570082706</p>
+                      <p className="text-[#5A5A5A]">916299349073</p>
                     </div>
                   </div>
                 </div>

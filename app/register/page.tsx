@@ -183,12 +183,12 @@ export default function RegisterPage() {
                   <a href="mailto:everythinggaurav48@gmail.com"
                     className="flex items-center gap-2 text-xs text-[#4A4A4A] hover:text-[#F05A28] transition-colors break-all">
                     <span className="text-[#F05A28] flex-shrink-0">✉</span>
-                    everythinggaurav48@gmail.com
+                     zerotwocode.official@gmail.com
                   </a>
                   <a href="tel:+916392361443"
                     className="flex items-center gap-2 text-xs text-[#4A4A4A] hover:text-[#F05A28] transition-colors">
                     <span className="text-[#F05A28] flex-shrink-0">📞</span>
-                    +91 6392361443
+                    +91 7570082706
                   </a>
                 </div>
               </div>
@@ -221,7 +221,7 @@ export default function RegisterPage() {
                       onChange={handleChange}
                       onFocus={() => setFocused("phone")}
                       onBlur={() => setFocused("")}
-                      placeholder="98765 43210"
+                      placeholder="7570082706"
                       className="flex-1 min-w-0 px-3 sm:px-4 py-3 text-sm text-[#1A1A1A] placeholder-[#B0A89E] outline-none bg-white"
                     />
                   </div>

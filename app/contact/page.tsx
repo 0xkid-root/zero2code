@@ -44,19 +44,19 @@ const CONTACT_INFO: ContactInfoItem[] = [
   {
     icon: "📍",
     label: "Visit Us",
-    lines: ["Plot no 43 Vikas Nagar Sector", "5 Ring Road, Lucknow 226022"],
+    lines: ["Lucknow 226022"],
   },
   {
     icon: "📞",
     label: "Call Us",
-    lines: ["+91-7007237006", "9140444301 | 9120936936"],
-    href: "tel:+917007237006",
+    lines: ["+91- 7570082706 ", "8381978806"],
+    href: "tel:+917570082706",
   },
   {
     icon: "✉",
     label: "Email Us",
-    lines: ["zerotocode@gmail.com", "hr@zerotocode.in"],
-    href: "mailto:zerotocode@gmail.com",
+    lines: [" zerotwocode.official@gmail.com", ],
+    href: "mailto:zerotwocode.official@gmail.com",
   },
   {
     icon: "🕐",
@@ -277,13 +277,13 @@ export default function ContactPage(): JSX.Element {
               📞 Call Now
             </a>
             <a
-              href="mailto:zerotocode@gmail.com"
+              href="mailto: zerotwocode.official@gmail.com"
               className="flex items-center gap-2 bg-white/10 hover:bg-[#F05A28] border border-white/20 hover:border-[#F05A28] text-white text-xs font-semibold px-4 py-2.5 rounded-full transition-all duration-200"
             >
               ✉ Send Email
             </a>
             <a
-              href="https://wa.me/917007237006"
+              href="https://wa.me/917570082706"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 bg-white/10 hover:bg-[#F05A28] border border-white/20 hover:border-[#F05A28] text-white text-xs font-semibold px-4 py-2.5 rounded-full transition-all duration-200"
@@ -526,7 +526,7 @@ export default function ContactPage(): JSX.Element {
                       href="tel:+917007237006"
                       className="flex items-center justify-center gap-2 py-3 rounded-xl bg-[#F05A28] text-white text-sm font-bold hover:bg-[#D94E20] transition-colors shadow-lg shadow-[#F05A28]/25"
                     >
-                      📞 Call +91-7007237006
+                      📞 Call +91-7570082706
                     </a>
                     <a
                       href="https://wa.me/917007237006"
@@ -591,7 +591,7 @@ export default function ContactPage(): JSX.Element {
               <div className="bg-white rounded-2xl border border-[#DDD8CF] overflow-hidden shadow-sm">
                 <div className="bg-gradient-to-br from-[#EEEBE4] to-[#DDD8CF] h-40 flex flex-col items-center justify-center relative">
                   <span className="text-4xl mb-2" role="img" aria-label="map pin">📍</span>
-                  <p className="text-sm font-bold text-[#1C1C1C]">Vikas Nagar, Lucknow</p>
+                  <p className="text-sm font-bold text-[#1C1C1C]"> Lucknow</p>
                   <p className="text-xs text-[#5A5A5A]">226022, Uttar Pradesh</p>
                   <div className="absolute inset-0 opacity-10"
                     style={{ backgroundImage: "radial-gradient(circle, #F05A28 1px, transparent 1px)", backgroundSize: "20px 20px" }}
