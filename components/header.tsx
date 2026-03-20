@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button'
 import { Menu, X, ChevronDown } from 'lucide-react'
 
 const navLinks = [
+  { label: 'Home', href: '/' },
   { label: 'About Us', href: '/about' },
   {
     label: 'Training',
@@ -17,15 +18,7 @@ const navLinks = [
       { label: 'Industrial Training', href: '/training/industrial-training' },
     ],
   },
-  {
-    label: 'Service',
-    href: '#service',
-    dropdown: [
-      { label: 'Mentorship', href: '#mentorship' },
-      { label: 'Code Review', href: '#code-review' },
-      { label: 'Career Coaching', href: '#career-coaching' },
-    ],
-  },
+ 
   { label: 'Project', href: '#project' },
   { label: 'Blog', href: '/blog' },
   { label: 'Career', href: '#career' },
