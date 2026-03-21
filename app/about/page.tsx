@@ -95,12 +95,12 @@ const VALUES: ValueItem[] = [
 ];
 
 const TIMELINE: TimelineItem[] = [
-  { year: "2025", title: "The Beginning",          desc: "zerotocode started in a small room in Lucknow with 12 students and a dream to make quality IT education accessible.",      highlight: false },
+  { year: "2025", title: "The Beginning",          desc: "zerotwocode started in a small room in Lucknow with 12 students and a dream to make quality IT education accessible.",      highlight: false },
   { year: "2025", title: "First 1,000 Students",   desc: "Crossed the 1,000 students milestone. Expanded to a full campus with dedicated labs and mentorship rooms.",               highlight: false },
   { year: "2025", title: "Online Programs Launch",  desc: "Pivoted to hybrid learning during the pandemic — pioneered live online training that now serves students across India.",   highlight: true  },
   { year: "2025", title: "Apprenticeship Program",  desc: "Launched India's most comprehensive 6-month CS/IT apprenticeship — students got real salaries during training.",          highlight: false },
   { year: "2025", title: "AI & ML Courses Added",   desc: "Integrated Artificial Intelligence and Machine Learning into the curriculum — staying 2 years ahead of the market.",     highlight: false },
-  { year: "2025", title: "50,000+ Alumni Strong",   desc: "Today zerotocode alumni work at companies across India and the world. The mission continues — one student at a time.",   highlight: true  },
+  { year: "2025", title: "50,000+ Alumni Strong",   desc: "Today zerotwocode alumni work at companies across India and the world. The mission continues — one student at a time.",   highlight: true  },
 ];
 
 const TECHS: TechItem[] = [
@@ -334,13 +334,13 @@ export default function AboutPage(): JSX.Element {
                 <Reveal direction="up" delay={100}>
                   <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black text-white leading-none tracking-tight mb-6">
                     We Are<br />
-                    <span className="ztc-grad-text">zerotocode</span>
+                    <span className="ztc-grad-text">zerotwocode</span>
                   </h1>
                 </Reveal>
 
                 <Reveal direction="up" delay={200}>
                   <p className="text-base sm:text-lg text-white/55 leading-relaxed mb-8 max-w-lg mx-auto lg:mx-0">
-                    Since 2025 we&apos;ve been on one mission: take students from <strong className="text-white/80">zero coding knowledge</strong> to <strong className="text-white/80">job-ready professionals</strong> — with live projects, real mentors, and a community that lasts a lifetime.
+                    we&apos;re on mission to take students from <strong className="text-white/80">zero coding knowledge</strong> to <strong className="text-white/80">job-ready professionals</strong> — with live projects, real mentors, and a community that lasts a lifetime.
                   </p>
                 </Reveal>
 
@@ -474,14 +474,14 @@ export default function AboutPage(): JSX.Element {
                   Our Mission
                 </span>
                 <h2 className="text-3xl sm:text-4xl font-black text-[#1C1C1C] leading-tight mb-5">
-                  Making World-Class<br />
+                  Making Real-World<br />
                   <span className="ztc-grad-text">IT Education Accessible</span>
                 </h2>
               </Reveal>
 
               <Reveal direction="right" delay={100}>
                 <p className="text-sm sm:text-base text-[#5A5A5A] leading-relaxed mb-4">
-                  zerotocode was born from a simple belief: <strong className="text-[#1C1C1C]">every student deserves a shot at an IT career</strong>, regardless of their background. Too many brilliant minds were being held back by expensive, inaccessible, or outdated training.
+                  zerotwocode was born from a simple belief: <strong className="text-[#1C1C1C]">every student deserves a shot at an IT career</strong>, regardless of their background. Too many brilliant minds were being held back by expensive, inaccessible, or outdated training.
                 </p>
                 <p className="text-sm sm:text-base text-[#5A5A5A] leading-relaxed mb-8">
                   We built an institution that pairs <strong className="text-[#1C1C1C]">industry-grade curriculum</strong> with <strong className="text-[#1C1C1C]">personal mentorship</strong>, live project experience, and a placement system that actually works. Not just a course — a complete career launchpad.
@@ -705,8 +705,7 @@ export default function AboutPage(): JSX.Element {
                     <span className="ztc-grad-text">Zero to Hero?</span>
                   </h2>
                   <p className="text-white/50 text-sm sm:text-base max-w-lg mx-auto mb-8 leading-relaxed">
-                    Join 50,000+ students who chose zerotocode to launch their IT careers. New batch starting soon — seats are limited.
-                  </p>
+                        Ready to start your IT career? Enroll with<strong className="text-white/80"> ZerotwoCode</strong> today — limited seats available.                  </p>
                   <div className="flex flex-col sm:flex-row gap-3 justify-center">
                     <a href="#"
                       className="ztc-shimmer-btn relative overflow-hidden group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-[#F05A28] text-white text-sm font-black hover:bg-[#D94E20] transition-all duration-200 hover:scale-105 active:scale-95 shadow-xl shadow-[#F05A28]/35">

@@ -6,14 +6,12 @@ import { useState } from "react";
 const benefits = [
   "4-5 Hour Daily Classes",
   "Study Material for Every Technology",
-  "Full Lifetime Access",
-  "1-Year CodeHelper Learning App Access",
-  "1-Year Free Web Hosting",
+  "Full Lifetime Suport",
+  "Free Hosting Support for Your Live Projects",
   "Recovery Classes & Doubt Sessions",
-  "Physical Project File Provided",
+  "Project File Provided",
   "Live Mini & Major Projects",
   "HR Skills & PD Sessions",
-  "Hostel & Room Assistance",
   "Certification & Performance Awards",
 ];
 
@@ -122,7 +120,7 @@ export default function SummerTrainingPage() {
             <div className="rounded-2xl overflow-hidden border border-[#DDD8CF] shadow-md">
               <img
                 src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=900&q=80"
-                alt="Summer Training CS IT Students at zerotocode"
+                alt="Summer Training CS IT Students at zerotwocode"
                 className="w-full h-44 sm:h-60 md:h-72 object-cover"
               />
             </div>
@@ -152,12 +150,12 @@ export default function SummerTrainingPage() {
 
               <h3 className="font-bold text-[#1C1C1C] mb-2">About</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed mb-4">
-                zerotocode Technology Pvt. Ltd. offers the{" "}
+                zerotwocode Technology Pvt. Ltd. offers the{" "}
                 <strong className="text-[#1C1C1C]">best Summer Training in CS &amp; IT</strong>, designed for
                 B.Tech, Diploma, BCA, and MCA students. This hands-on program goes beyond theory and provides
                 practical exposure through real-time projects, ensuring learners gain{" "}
                 <strong className="text-[#1C1C1C]">industry-ready technical skills</strong>. Recognized as the{" "}
-                <strong className="text-[#1C1C1C]">best company for Summer Training in Lucknow</strong>, zerotocode
+                <strong className="text-[#1C1C1C]">best company for Summer Training in Lucknow</strong>, zerotwocode
                 is trusted by thousands of students for its{" "}
                 <strong className="text-[#1C1C1C]">expert-led training</strong>, career-oriented learning, and
                 high-quality project work.
@@ -168,12 +166,12 @@ export default function SummerTrainingPage() {
                 hands-on experience in real-world projects, guided by experienced mentors. By the end of the program,
                 learners build strong portfolios and prepare for successful interviews. As the{" "}
                 <strong className="text-[#1C1C1C]">top IT training and software development company in Lucknow</strong>,
-                zerotocode ensures students develop both technical and professional skills.
+                zerotwocode ensures students develop both technical and professional skills.
               </p>
 
               <h3 className="font-bold text-[#1C1C1C] mb-2">Program Tenure &amp; Timing</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed mb-6">
-                zerotocode's{" "}
+                zerotwocode's{" "}
                 <strong className="text-[#1C1C1C]">Summer Training Program in CS &amp; IT</strong> starts every
                 year in June/July and runs for 4 to 6 weeks, concluding by August/September. The schedule aligns
                 with college examinations and academic calendars, making it convenient for B.Tech, Diploma, BCA,
@@ -225,8 +223,7 @@ export default function SummerTrainingPage() {
               <h2 className="text-lg sm:text-xl font-black text-[#1C1C1C] mb-1">How to Join?</h2>
               <div className="w-8 h-1 rounded-full bg-[#F05A28] mb-4" />
               <p className="text-sm text-[#5A5A5A] leading-relaxed">
-                Enrolling is simple! Students can apply online directly through our website or visit the
-                zerotocode campus to complete the registration process.
+                Apply online through our website or connect with us on WhatsApp or call for instant registration support.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 mt-5">
                 <button
@@ -370,14 +367,14 @@ export default function SummerTrainingPage() {
                     <div>
                       <p className="font-semibold text-[#1C1C1C]">Email</p>
                       <p className="text-[#5A5A5A] break-all"> zerotwocode.official@gmail.com</p>
-                      {/* <p className="text-[#5A5A5A] break-all">hr@zerotocode.in</p> */}
+                      {/* <p className="text-[#5A5A5A] break-all">hr@zerotwocode.in</p> */}
                     </div>
                   </div>
                   <div className="flex gap-3">
                     <span className="text-[#F05A28] text-base mt-0.5 flex-shrink-0">📍</span>
                     <div>
                       <p className="font-semibold text-[#1C1C1C]">Address</p>
-                      <p className="text-[#5A5A5A]">Lucknow Pincode 226022</p>
+                      <p className="text-[#5A5A5A]">Lucknow Pincode 226024</p>
                     </div>
                   </div>
                   <div className="flex gap-3">
@@ -385,7 +382,8 @@ export default function SummerTrainingPage() {
                     <div>
                       <p className="font-semibold text-[#1C1C1C]">Phone</p>
                       <p className="text-[#5A5A5A]">+91-7570082706</p>
-                      <p className="text-[#5A5A5A]">916299349073</p>
+                      <p className="text-[#5A5A5A]">+91-8381978806</p>
+                      <p className="text-[#5A5A5A]">+91-7390814759</p>
                     </div>
                   </div>
                 </div>
