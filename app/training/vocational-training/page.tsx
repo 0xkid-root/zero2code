@@ -124,7 +124,7 @@ export default function VocationalTrainingPage() {
             <div className="rounded-2xl overflow-hidden border border-[#DDD8CF] shadow-md">
               <img
                 src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=900&q=80"
-                alt="Vocational Training CS IT Students at zerotocode"
+                alt="Vocational Training CS IT Students at zerotwocode"
                 className="w-full h-44 sm:h-64 md:h-[340px] object-cover object-top"
               />
             </div>
@@ -154,27 +154,27 @@ export default function VocationalTrainingPage() {
 
               <h3 className="font-bold text-[#1C1C1C] mb-2">About</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed mb-4">
-                Vocational Training in CS &amp; IT at <strong className="text-[#1C1C1C]">zerotocode</strong> is
+                Vocational Training in CS &amp; IT at <strong className="text-[#1C1C1C]">zerotwocode</strong> is
                 a career-focused, hands-on learning program specially designed for B.Tech, Diploma, BCA, and MCA
                 students. This program goes beyond theory, enabling learners to develop{" "}
                 <strong className="text-[#1C1C1C]">industry-ready technical skills</strong> through practical
                 exposure and real-world projects. Recognized as the{" "}
                 <strong className="text-[#1C1C1C]">top company for Vocational Training in CS &amp; IT</strong>,
-                zerotocode is trusted by thousands of students for its expert-led sessions and career-oriented
+                zerotwocode is trusted by thousands of students for its expert-led sessions and career-oriented
                 training.
               </p>
               <p className="text-sm text-[#5A5A5A] leading-relaxed mb-6">
                 Through intensive <strong className="text-[#1C1C1C]">Vocational Training in CS &amp; IT</strong> at
-                zerotocode, students gain hands-on experience with live projects and expert mentorship. By the end
+                zerotwocode, students gain hands-on experience with live projects and expert mentorship. By the end
                 of the program, learners develop the confidence to handle real-time challenges, showcase
                 industry-level projects during interviews, and prepare effectively for a successful IT career.
                 Recognized as the <strong className="text-[#1C1C1C]">best company for Vocational Training in
-                Lucknow</strong>, zerotocode ensures students build strong technical and professional skills!
+                Lucknow</strong>, zerotwocode ensures students build strong technical and professional skills!
               </p>
 
               <h3 className="font-bold text-[#1C1C1C] mb-2">Program Tenure &amp; Timing</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed mb-6">
-                zerotocode's Vocational Training Program in CS &amp; IT starts every year in June/July and
+                zerotwocode's Vocational Training Program in CS &amp; IT starts every year in June/July and
                 continues for 4 to 6 weeks, wrapping up by August/September. The schedule is designed to align
                 with college examinations, academic calendars, and batch availability, ensuring maximum convenience
                 for B.Tech, Diploma, BCA, and MCA students.
@@ -226,7 +226,7 @@ export default function VocationalTrainingPage() {
               <div className="w-8 h-1 rounded-full bg-[#F05A28] mb-4" />
               <p className="text-sm text-[#5A5A5A] leading-relaxed mb-5">
                 Enrolling is simple! Students can apply online directly through our website or visit the
-                zerotocode campus to complete the registration process.
+                zerotwocode campus to complete the registration process.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <button
@@ -304,9 +304,9 @@ export default function VocationalTrainingPage() {
               </div>
             </div>
 
-            {/* ── EXTRA: Why Choose zerotocode ── */}
+            {/* ── EXTRA: Why Choose zerotwocode ── */}
             <div className="bg-white rounded-2xl border border-[#DDD8CF] p-5 sm:p-8 shadow-sm">
-              <h2 className="text-lg sm:text-xl font-black text-[#1C1C1C] mb-1">Why Choose zerotocode?</h2>
+              <h2 className="text-lg sm:text-xl font-black text-[#1C1C1C] mb-1">Why Choose zerotwocode?</h2>
               <div className="w-8 h-1 rounded-full bg-[#F05A28] mb-6" />
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
@@ -334,9 +334,9 @@ export default function VocationalTrainingPage() {
               <div className="w-8 h-1 rounded-full bg-[#F05A28] mb-6" />
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
-                  { name: "Rahul Verma", course: "MERN Stack", text: "zerotocode transformed my career. The live project experience helped me crack my first job in just 2 months after training!", avatar: "RV" },
+                  { name: "Rahul Verma", course: "MERN Stack", text: "zerotwocode transformed my career. The live project experience helped me crack my first job in just 2 months after training!", avatar: "RV" },
                   { name: "Priya Singh", course: "Python & Django", text: "The mentors are extremely supportive. I went from zero coding knowledge to building full web apps. Best decision ever!", avatar: "PS" },
-                  { name: "Ankit Sharma", course: "Java Full Stack", text: "Amazing infrastructure, real projects, and a placement team that actually helps. Highly recommend zerotocode!", avatar: "AS" },
+                  { name: "Ankit Sharma", course: "Java Full Stack", text: "Amazing infrastructure, real projects, and a placement team that actually helps. Highly recommend zerotwocode!", avatar: "AS" },
                   { name: "Neha Gupta", course: "Flutter", text: "The flexible batch timings allowed me to train alongside my college. Got placed before my final semester!", avatar: "NG" },
                 ].map((t) => (
                   <div key={t.name} className="p-4 rounded-xl bg-[#EEEBE4] border border-[#DDD8CF]">
@@ -422,7 +422,7 @@ export default function VocationalTrainingPage() {
                     <div>
                       <p className="font-semibold text-[#1C1C1C]">Email</p>
                       <p className="text-[#5A5A5A] break-all"> zerotwocode.official@gmail.com</p>
-                      {/* <p className="text-[#5A5A5A] break-all">hr@zerotocode.in</p> */}
+                      {/* <p className="text-[#5A5A5A] break-all">hr@zerotwocode.in</p> */}
                     </div>
                   </div>
                   <div className="flex gap-3">
@@ -437,8 +437,9 @@ export default function VocationalTrainingPage() {
                     <span className="text-[#F05A28] text-base mt-0.5 flex-shrink-0">📞</span>
                     <div>
                       <p className="font-semibold text-[#1C1C1C]">Phone</p>
-                      <p className="text-[#5A5A5A]">+91-7570082706</p>
-                      <p className="text-[#5A5A5A]">6299349073</p>
+                     <p className="text-[#5A5A5A]">+91-7570082706</p>
+                      <p className="text-[#5A5A5A]">+91-8381978806</p>
+                      <p className="text-[#5A5A5A]">+91-7390814759</p>
                     </div>
                   </div>
                 </div>

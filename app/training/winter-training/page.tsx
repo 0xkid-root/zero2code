@@ -106,7 +106,7 @@ export default function WinterTrainingPage() {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-[#F05A28]/15 border-4 border-white">
               <img
                 src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=900&q=80"
-                alt="Winter Training CS IT Students at zerotocode"
+                alt="Winter Training CS IT Students at zerotwocode"
                 className="w-full h-[360px] object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-[#1C1C1C]/70 to-transparent" />
@@ -142,7 +142,7 @@ export default function WinterTrainingPage() {
           <div className="lg:hidden w-full rounded-2xl overflow-hidden border border-[#DDD8CF] shadow-md">
             <img
               src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=900&q=80"
-              alt="Winter Training CS IT Students at zerotocode"
+              alt="Winter Training CS IT Students at zerotwocode"
               className="w-full h-48 sm:h-64 object-cover"
             />
           </div>
@@ -181,28 +181,28 @@ export default function WinterTrainingPage() {
 
               <h3 className="font-bold text-[#1C1C1C] mb-2">About</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed mb-4">
-                Winter Training in CS &amp; IT at <strong className="text-[#1C1C1C]">zerotocode</strong> is a
+                Winter Training in CS &amp; IT at <strong className="text-[#1C1C1C]">zerotwocode</strong> is a
                 career-focused, hands-on learning program specially designed for B.Tech, Diploma, BCA, and MCA
                 students. This program goes beyond theory, enabling learners to develop{" "}
                 <strong className="text-[#1C1C1C]">industry-ready technical skills</strong> through practical
                 exposure and real-world projects. Recognized as the{" "}
                 <strong className="text-[#1C1C1C]">top company for Winter Training in CS &amp; IT</strong>,
-                zerotocode is trusted by thousands of students for its expert-led sessions and career-oriented
-                training. If you are looking for the best company for Winter Training in Lucknow, zerotocode
+                zerotwocode is trusted by thousands of students for its expert-led sessions and career-oriented
+                training. If you are looking for the best company for Winter Training in Lucknow, zerotwocode
                 is the right choice to kickstart your IT career.
               </p>
               <p className="text-sm text-[#5A5A5A] leading-relaxed mb-6">
-                Through intensive Winter Training in CS &amp; IT at zerotocode, students gain hands-on experience
+                Through intensive Winter Training in CS &amp; IT at zerotwocode, students gain hands-on experience
                 with live projects and expert mentorship. By the end of the program, learners develop the
                 confidence to handle real-time challenges, showcase industry-level projects during interviews,
                 and prepare effectively for a successful IT career. Recognized as the{" "}
                 <strong className="text-[#1C1C1C]">best company for Winter Training in Lucknow</strong>,
-                zerotocode ensures students build strong technical and professional skills.
+                zerotwocode ensures students build strong technical and professional skills.
               </p>
 
               <h3 className="font-bold text-[#1C1C1C] mb-2">Program Tenure &amp; Timing</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed mb-6">
-                zerotocode's Winter Training Program in CS &amp; IT starts every year in November/December and
+                zerotwocode's Winter Training Program in CS &amp; IT starts every year in November/December and
                 continues for 4 to 6 weeks, wrapping up by January. The schedule is designed to align with
                 college examinations and academic calendars, ensuring maximum convenience for B.Tech, Diploma,
                 BCA, and MCA students.
@@ -254,7 +254,7 @@ export default function WinterTrainingPage() {
               <div className="w-8 h-1 rounded-full bg-[#F05A28] mb-4" />
               <p className="text-sm text-[#5A5A5A] leading-relaxed mb-5">
                 Enrolling is simple! Students can apply online directly through our website or visit the
-                zerotocode campus to complete the registration process.
+                zerotwocode campus to complete the registration process.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <button
@@ -305,9 +305,9 @@ export default function WinterTrainingPage() {
               </div>
             </div>
 
-            {/* Why Choose zerotocode */}
+            {/* Why Choose zerotwocode */}
             <div className="bg-white rounded-2xl border border-[#DDD8CF] p-5 sm:p-8 shadow-sm">
-              <h2 className="text-lg sm:text-xl font-black text-[#1C1C1C] mb-1">Why Choose zerotocode?</h2>
+              <h2 className="text-lg sm:text-xl font-black text-[#1C1C1C] mb-1">Why Choose zerotwocode?</h2>
               <div className="w-8 h-1 rounded-full bg-[#F05A28] mb-6" />
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
@@ -389,7 +389,7 @@ export default function WinterTrainingPage() {
                     <div>
                       <p className="font-semibold text-[#1C1C1C]">Email</p>
                       <p className="text-[#5A5A5A] break-all">zerotwocode.official@gmail.com</p>
-                      {/* <p className="text-[#5A5A5A] break-all">hr@zerotocode.in</p> */}
+                      {/* <p className="text-[#5A5A5A] break-all">hr@zerotwocode.in</p> */}
                     </div>
                   </div>
                   <div className="flex gap-3">
@@ -405,7 +405,8 @@ export default function WinterTrainingPage() {
                     <div>
                       <p className="font-semibold text-[#1C1C1C]">Phone</p>
                       <p className="text-[#5A5A5A]">+91-7570082706</p>
-                      <p className="text-[#5A5A5A]">916299349073 </p>
+                      <p className="text-[#5A5A5A]">+91-8381978806</p>
+                      <p className="text-[#5A5A5A]">+91-7390814759</p>
                     </div>
                   </div>
                 </div>
@@ -463,7 +464,7 @@ export default function WinterTrainingPage() {
               {[
                 { label: "Full Name", name: "name", type: "text", placeholder: "Your full name" },
                 { label: "Email", name: "email", type: "email", placeholder: "you@example.com" },
-                { label: "Phone", name: "phone", type: "tel", placeholder: "+91 98765 43210" },
+                { label: "Phone", name: "phone", type: "tel", placeholder: "+91 7570082706" },
               ].map((f) => (
                 <div key={f.name} className="flex flex-col gap-1.5">
                   <label className="text-sm font-semibold text-[#1C1C1C]">

@@ -101,7 +101,7 @@ function Navbar({ onEnquiry }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-8 py-4 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2">
           <div className="w-9 h-9 rounded-lg bg-[#F05A28] flex items-center justify-center text-white font-black text-sm flex-shrink-0">Z</div>
-          <span className="font-black text-[#1C1C1C] text-lg tracking-tight">zerotocode</span>
+          <span className="font-black text-[#1C1C1C] text-lg tracking-tight">zerotwocode</span>
         </a>
 
         <div className="hidden md:flex items-center gap-6 text-sm font-medium text-[#5A5A5A]">
@@ -217,7 +217,7 @@ export default function ApprenticeshipPage() {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-[#F05A28]/15 border-4 border-white">
               <img
                 src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=900&q=80"
-                alt="Apprenticeship Training CS IT at zerotocode"
+                alt="Apprenticeship Training CS IT at zerotwocode"
                 className="w-full h-[360px] object-cover object-center"
               />
               <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-[#1C1C1C]/70 to-transparent" />
@@ -253,7 +253,7 @@ export default function ApprenticeshipPage() {
           <div className="lg:hidden w-full rounded-2xl overflow-hidden border border-[#DDD8CF] shadow-md relative">
             <img
               src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=900&q=80"
-              alt="Apprenticeship Training CS IT at zerotocode"
+              alt="Apprenticeship Training CS IT at zerotwocode"
               className="w-full h-48 sm:h-64 object-cover object-center"
             />
             <div className="absolute bottom-3 left-3 bg-[#1C1C1C]/80 text-white text-xs font-semibold px-3 py-1.5 rounded-lg backdrop-blur-sm">
@@ -295,13 +295,13 @@ export default function ApprenticeshipPage() {
 
               <h3 className="font-bold text-[#1C1C1C] mb-2">About</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed mb-4">
-                zerotocode's <strong className="text-[#1C1C1C]">6-month CS &amp; IT Apprenticeship Program in Lucknow</strong> is
+                zerotwocode's <strong className="text-[#1C1C1C]">6-month CS &amp; IT Apprenticeship Program in Lucknow</strong> is
                 a comprehensive, career-focused training designed for{" "}
                 <strong className="text-[#1C1C1C]">B.Tech, MCA, BCA, and Diploma students</strong>. This program combines
                 practical learning, real-world projects, and industry mentorship to help participants develop{" "}
                 <strong className="text-[#1C1C1C]">job-ready technical and professional skills</strong>. Recognized as the{" "}
                 <strong className="text-[#1C1C1C]">best apprenticeship program for CS &amp; IT students in Lucknow</strong>,
-                zerotocode equips learners to excel in software development, web technologies, and IT careers.
+                zerotwocode equips learners to excel in software development, web technologies, and IT careers.
               </p>
               <p className="text-sm text-[#5A5A5A] leading-relaxed mb-6">
                 During this apprenticeship, students gain hands-on experience with live projects, learn industry-standard
@@ -313,7 +313,7 @@ export default function ApprenticeshipPage() {
 
               <h3 className="font-bold text-[#1C1C1C] mb-2">Program Duration &amp; Timing</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed mb-6">
-                zerotocode's <strong className="text-[#1C1C1C]">6-Month CS &amp; IT Apprenticeship Program</strong> starts in{" "}
+                zerotwocode's <strong className="text-[#1C1C1C]">6-Month CS &amp; IT Apprenticeship Program</strong> starts in{" "}
                 <strong className="text-[#1C1C1C]">July and runs for 6 months</strong>. The program schedule is flexible,
                 designed to align with college exams and academic commitments, making it convenient for{" "}
                 <strong className="text-[#1C1C1C]">B.Tech, MCA, BCA, and Diploma students</strong>. Our apprenticeship
@@ -366,7 +366,7 @@ export default function ApprenticeshipPage() {
               <h2 className="text-lg sm:text-xl font-black text-[#1C1C1C] mb-1">How to Join?</h2>
               <div className="w-8 h-1 rounded-full bg-[#F05A28] mb-4" />
               <p className="text-sm text-[#5A5A5A] leading-relaxed mb-5">
-                Apply online through the zerotocode website or visit the campus to register for the{" "}
+                Apply online through the zerotwocode website or visit the campus to register for the{" "}
                 <strong className="text-[#1C1C1C]">CS &amp; IT Apprenticeship Program</strong>. Limited seats available —
                 enroll now to secure your career advantage.
               </p>
@@ -446,9 +446,9 @@ export default function ApprenticeshipPage() {
               </div>
             </div>
 
-            {/* Why Choose zerotocode */}
+            {/* Why Choose zerotwocode */}
             <div className="bg-white rounded-2xl border border-[#DDD8CF] p-5 sm:p-8 shadow-sm">
-              <h2 className="text-lg sm:text-xl font-black text-[#1C1C1C] mb-1">Why Choose zerotocode?</h2>
+              <h2 className="text-lg sm:text-xl font-black text-[#1C1C1C] mb-1">Why Choose zerotwocode?</h2>
               <div className="w-8 h-1 rounded-full bg-[#F05A28] mb-6" />
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
@@ -530,7 +530,7 @@ export default function ApprenticeshipPage() {
                     <div>
                       <p className="font-semibold text-[#1C1C1C]">Email</p>
                       <p className="text-[#5A5A5A] break-all"> zerotwocode.official@gmail.com</p>
-                      {/* <p className="text-[#5A5A5A] break-all">hr@zerotocode.in</p> */}
+                      {/* <p className="text-[#5A5A5A] break-all">hr@zerotwocode.in</p> */}
                     </div>
                   </div>
                   <div className="flex gap-3">
