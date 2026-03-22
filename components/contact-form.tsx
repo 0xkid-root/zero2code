@@ -166,12 +166,11 @@ export default function ContactForm() {
   }
 
   const courseOptions = [
-    { value: 'aws', label: '☁️  AWS Track' },
-    { value: 'python', label: '🐍  Python Development' },
-    { value: 'java', label: '☕  Java Development' },
-    { value: 'android', label: '📱  Android Development' },
-    { value: 'digital', label: '📣  Digital Marketing' },
-    { value: 'fullstack', label: '⚡  Full-Stack Development' },
+    { value: 'summerTraining', label: 'Summer Training' },
+    { value: 'winterTraining', label: 'Winter Training' },
+    { value: 'apprenticeship', label: 'Apprenticeship' },
+    { value: 'vocational', label: 'Vocational Training' },
+    
   ]
 
   return (

@@ -55,10 +55,10 @@ const syllabus = [
 ];
 
 const alsoAvailable = [
-  "Summer Training for Electronics",
-  "Summer Training for Electrical",
-  "Summer Training for CS/IT",
-  "Apprenticeship Program for CS/IT",
+  "Summer Training for CS/It",
+  "Winter Training for CS/IT",
+  "Vocational Training for CS/IT",
+  "Apprenticeship Program for CS/IT"
 ];
 
 const popularLanguages = [
