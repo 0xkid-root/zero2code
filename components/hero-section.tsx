@@ -165,7 +165,7 @@ export default function HeroSection() {
   </div>
 
   <p className="text-sm text-muted-foreground">
-    <span className="font-bold text-foreground">50,000+</span> students enrolled
+    <span className="font-bold text-foreground">50+</span> students enrolled
   </p>
 </div>
           </div>

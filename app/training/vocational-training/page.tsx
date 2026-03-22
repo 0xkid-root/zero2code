@@ -277,9 +277,9 @@ export default function VocationalTrainingPage() {
               <div className="w-8 h-1 rounded-full bg-[#F05A28] mb-6" />
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 {[
-                  { label: "Basic Session", price: "₹4,999", duration: "4 Weeks" },
-                  { label: "Technology Session", price: "₹7,000", duration: "6 Weeks", highlight: true },
-                  { label: "Full Program", price: "₹10,999", duration: "8 Weeks" },
+                  { label: "Vocational Training Session", price: "₹5000", duration: "6 Weeks" },
+                  // { label: "Technology Session", price: "₹7,000", duration: "6 Weeks", highlight: true },
+                  // { label: "Full Program", price: "₹10,999", duration: "8 Weeks" },
                 ].map((f) => (
                   <div
                     key={f.label}
