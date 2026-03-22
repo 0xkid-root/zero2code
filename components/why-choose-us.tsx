@@ -77,7 +77,7 @@ export default function WhyChooseUs() {
   const [activeFeature, setActiveFeature] = useState(null)
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 })
   const [isVisible, setIsVisible] = useState(false)
-  const [counters, setCounters] = useState({ students: 0, projects: 0, mentors: 0 })
+  const [counters, setCounters] = useState({ technology: 0, projects: 0, mentors: 0 })
   const sectionRef = useRef(null)
   const circleRef = useRef(null)
 
@@ -93,7 +93,7 @@ export default function WhyChooseUs() {
             const progress = Math.min(elapsed / duration, 1)
             const ease = 1 - Math.pow(1 - progress, 3)
             setCounters({
-              students: Math.floor(ease * 2400),
+              technology: Math.floor(ease * 20),
               projects: Math.floor(ease * 120),
               mentors: Math.floor(ease * 45),
             })
@@ -256,7 +256,7 @@ export default function WhyChooseUs() {
 
             {/* Stat badges */}
             {[
-              { label: 'Students', value: counters.students.toLocaleString() + '+', pos: 'top-4 -right-2 md:right-2', delay: '0.7s' },
+              { label: 'Technology', value: counters.technology.toLocaleString() + '+', pos: 'top-4 -right-2 md:right-2', delay: '0.7s' },
               { label: 'Projects', value: counters.projects + '+', pos: 'bottom-8 -left-2 md:left-0', delay: '0.9s' },
               { label: 'Mentors', value: counters.mentors + '+', pos: 'bottom-16 -right-2 md:right-0', delay: '1.1s' },
             ].map((badge) => (

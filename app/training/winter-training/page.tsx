@@ -38,9 +38,10 @@ const syllabus = [
 ];
 
 const alsoAvailable = [
+ "Summer Training for CS/It",
   "Winter Training for CS/IT",
-  "Winter Training for Electronics",
-  "Winter Training for Electrical",
+  "Vocational Training for CS/IT",
+  "Apprenticeship Program for CS/IT"
 ];
 
 
