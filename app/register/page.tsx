@@ -1,8 +1,10 @@
 "use client";
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { useState, useRef, useEffect } from "react";
+import toast from "react-hot-toast";
+import Image from "next/image";
 
-// ── Custom Dropdown (replaces native <select> to fix the blue highlight) ──
 function CustomSelect({ label, name, value, onChange, options, focused, setFocused }) {
   const [open, setOpen] = useState(false);
   const ref = useRef(null);
@@ -96,6 +98,61 @@ export default function RegisterPage() {
     college: "", course: "", year: "",
   });
   const [focused, setFocused] = useState("");
+const [loading, setLoading] = useState(false);
+
+const handleSubmit = async () => {
+  // validation
+  if (!form.name || !form.email || !form.phone || !form.college || !form.course || !form.year) {
+    alert("Please fill all fields");
+    return;
+  }
+
+  try {
+    setLoading(true);
+
+    // 1. Save to Google Sheet
+    await fetch("https://sheetdb.io/api/v1/ofzrmd3v2hvx3", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        data: {
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          college: form.college,
+          course: form.course,
+          year: form.year,
+          created_at: new Date().toISOString(),
+        },
+      }),
+    });
+
+    //show message
+    toast.success("Registration successful!");
+
+    // 2. WhatsApp message
+    const message = `Hi, I want to enroll.
+      Name: ${form.name}
+Email: ${form.email}
+Phone: ${form.phone}
+Course: ${form.course}
+Year: ${form.year}
+
+I have completed the registration form. Please share payment details.`;
+
+    // 3. Open WhatsApp
+    const url = `https://wa.me/917570082706?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
+
+  } catch (error) {
+    console.error(error);
+    alert("Something went wrong");
+  } finally {
+    setLoading(false);
+  }
+};
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
@@ -104,39 +161,47 @@ export default function RegisterPage() {
 
   return (
     <div className="min-h-screen bg-[#F5F0EB] font-sans">
-
-      {/* ── Navbar ── */}
       <Header />
-      
-
       {/* ── Hero strip ── */}
       <div className="bg-gradient-to-r from-[#F05A28] to-[#FF8C5A] py-5 px-4 text-center">
         <p className="text-white font-black text-sm sm:text-base tracking-wide">
-          🚀 Register Now — Limited Seats Available for 2025 Batch
+          🚀 Register Now — Limited Seats Available for 2026 Batch
         </p>
       </div>
 
-      {/* ── Form Section ── */}
       <div className="px-4 sm:px-6 py-10 sm:py-14 flex justify-center">
         <div className="w-full max-w-5xl rounded-3xl overflow-hidden shadow-xl border border-[#E8E0D8] bg-white">
-          {/*
-            RESPONSIVE FIX:
-            - Mobile: single column (flex-col)
-            - md+: side-by-side (grid 2-col)
-          */}
+        
           <div className="flex flex-col md:grid md:grid-cols-[1fr_1.4fr]">
 
             {/* ── Left Info Panel ── */}
             <div className="p-6 sm:p-10 bg-[#F5F0EB] md:border-r md:border-b-0 border-b border-[#E8E0D8] flex flex-col justify-between">
               <div>
                 {/* Logo */}
-                <div className="flex items-center gap-3 mb-6 sm:mb-8">
-                  <div className="w-10 h-10 rounded-xl bg-[#F05A28] flex items-center justify-center text-white font-black text-lg flex-shrink-0">Z</div>
-                  <div>
-                    <p className="font-black text-sm tracking-widest uppercase text-[#1A1A1A]">zerotocode</p>
-                    <p className="text-xs text-[#4A4A4A]">Technologies Pvt Ltd</p>
-                  </div>
-                </div>
+<div className="flex items-center gap-3 mb-6 sm:mb-8">
+  
+  {/* Logo Image */}
+  <div className="w-20 h-12 relative flex-shrink-0">
+    <Image
+      src="/logo1.png"
+      alt="ZeroTwoCode Logo"
+      width={100}
+      height={60}
+      className="object-contain"
+    />
+  </div>
+
+  {/* Text */}
+  <div>
+    <p className="font-black text-sm tracking-widest uppercase text-[#1A1A1A]">
+      zerotocode
+    </p>
+    <p className="text-xs text-[#4A4A4A]">
+      Technologies Pvt Ltd
+    </p>
+  </div>
+
+</div>
 
                 <h2 className="text-xl sm:text-2xl font-black leading-snug text-[#1A1A1A] mb-2">
                   Start Your Journey<br />
@@ -234,41 +299,25 @@ export default function RegisterPage() {
                   <CustomSelect label="Year" name="year" value={form.year} onChange={handleChange} options={yearOptions} focused={focused} setFocused={setFocused} />
                 </div>
 
-                {/* Amount */}
-                <div className="flex items-center justify-between rounded-xl px-4 sm:px-5 py-4 bg-[#FFF5F1] border-[1.5px] border-[#F0C4B0]">
-                  <div>
-                    <p className="text-xs uppercase tracking-widest font-semibold text-[#F05A28]">Amount</p>
-                    <p className="text-2xl font-black text-[#F05A28] mt-0.5">₹ 500.00</p>
-                  </div>
-                  <span className="px-3 py-1.5 rounded-full text-xs font-semibold bg-[#FDDDD0] text-[#F05A28] flex-shrink-0 ml-2">
-                    Non-refundable
-                  </span>
-                </div>
+              
 
                 {/* T&C */}
                 <p className="text-xs leading-relaxed text-[#4A4A4A]">
-                  By submitting, you agree to share your information with{" "}
-                  <strong className="text-[#1A1A1A]">zerotocode</strong> and{" "}
-                  <strong className="text-[#1A1A1A]">Razorpay</strong> in accordance with applicable laws.{" "}
-                  <a href="#" className="text-[#F05A28] underline hover:opacity-75 transition-opacity">
-                    Merchant's business policies ↗
-                  </a>
-                </p>
+  By registering, you agree to share your details with{" "}
+  <strong className="text-[#1A1A1A]">ZeroTwoCode</strong>. We will only use your information to guide you through enrollment and will not share it with third parties.
+</p>
 
-                {/* Submit Button */}
                 <button
-                  type="button"
-                  className="group w-full flex items-center justify-center gap-2 py-4 rounded-xl text-sm font-black text-white bg-[#F05A28] hover:bg-[#E04818] shadow-lg shadow-[#F05A28]/30 hover:shadow-[#F05A28]/50 transition-all duration-200 hover:scale-[1.01] active:scale-[0.99]"
-                >
-                  Pay &amp; Register Now
-                  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                  </svg>
-                </button>
-
-                <p className="text-center text-xs text-[#B0A89E]">
-                  🔒 Secured by <strong className="text-[#4A4A4A]">Razorpay</strong>
-                </p>
+                 type="button"
+                 onClick={handleSubmit}
+  disabled={loading}
+  className="group w-full flex items-center justify-center gap-2 py-4 rounded-xl text-sm font-black text-white bg-[#F05A28] hover:bg-[#E04818] shadow-lg shadow-[#F05A28]/30 hover:shadow-[#F05A28]/50 transition-all duration-200 hover:scale-[1.01] active:scale-[0.99]"
+>
+  {loading ? "Processing..." : " Register Now"}
+  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+  </svg>
+</button>
               </div>
             </div>
 
@@ -276,10 +325,9 @@ export default function RegisterPage() {
         </div>
       </div>
 
-      {/* Footer */}
-      <footer className="text-center pb-8 text-xs text-[#B0A89E]">
-        © 2025 zerotocode Technologies Pvt Ltd · All rights reserved
-      </footer>
+      <Footer/>
+
+
     </div>
   );
 }
