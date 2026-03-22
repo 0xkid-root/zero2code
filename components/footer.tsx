@@ -3,6 +3,8 @@
 import Link from 'next/link'
 import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook, ArrowUpRight, Zap } from 'lucide-react'
 import { useState, useEffect, useRef } from 'react'
+import Image from "next/image";
+
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -387,8 +389,12 @@ const footerRef = useRef<HTMLElement | null>(null)
           }}
         />
 
+
+
         {/* Watermark brand name */}
         <div className="ztc-brand-stamp" aria-hidden="true">ZEROTWOCODE</div>
+        
+        
 
         {/* Scanline top border */}
         <div className="ztc-scanline" />
@@ -402,8 +408,19 @@ const footerRef = useRef<HTMLElement | null>(null)
               Est. 2025
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
-              <div className="ztc-logo-mark">Z</div>
-              <span className="ztc-logo-name">ZeroTwoCode</span>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
+  
+    <Image
+    src="/logo1.png"
+    alt="ZeroToCode Logo"
+    width={120}
+    height={60}
+    className="object-contain"
+  />
+
+  <span className="ztc-logo-name">ZeroTwoCode</span>
+
+</div>
             </div>
             <p style={{ fontSize: '0.78rem', color: 'rgba(255,255,255,0.45)', lineHeight: '1.7', marginBottom: '0.5rem' }}>
               ZeroTwoCode provides industry-focused IT training programs designed to help students and professionals build real-world skills and launch successful tech careers.

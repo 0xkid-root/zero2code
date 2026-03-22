@@ -122,6 +122,8 @@ function TiltCard({ cat, index }) {
 
       {/* ── content ── */}
       <div className={`relative z-10 ${cat.featured ? "mt-7" : ""}`}>
+     <Link href={`/training/${cat.slug}`}>
+
 
         {/* icon + badge row */}
         <div className="flex items-start justify-between mb-5">
@@ -179,6 +181,8 @@ function TiltCard({ cat, index }) {
           </button>
           </Link>
         </div>
+        </Link>
+
       </div>
 
       {/* ── featured bottom bar ── */}

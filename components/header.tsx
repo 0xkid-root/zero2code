@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Menu, X, ChevronDown } from 'lucide-react'
+import Image from "next/image";
 
 const navLinks = [
   { label: 'Home', href: '/' },
@@ -46,13 +47,22 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/">
-          <div className="flex items-center gap-2 cursor-pointer">
-            <div className="w-8 h-8 bg-primary rounded flex items-center justify-center">
-              <span className="text-white font-bold text-lg">Z</span>
-            </div>
-            <span className="text-xl font-bold text-foreground">ZeroTwoCode</span>
-          </div>
-          </Link>
+  <div className="flex items-center gap-2 cursor-pointer">
+    
+    <Image
+      src="/logo1.jpeg"   // put inside public folder
+      alt="ZeroToCode Logo"
+      width={80}
+      height={60}
+      className="object-contain"
+    />
+
+    <span className="text-xl font-bold text-foreground">
+      ZeroToCode
+    </span>
+    
+  </div>
+        </Link>
 
         {/* Desktop Menu */}
         <div ref={dropdownRef} className="hidden md:flex items-center gap-8">

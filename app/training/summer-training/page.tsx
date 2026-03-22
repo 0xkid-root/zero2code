@@ -79,7 +79,6 @@ const eligibility = [
 
 
 export default function SummerTrainingPage() {
-  const [enquiryOpen, setEnquiryOpen] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", phone: "", course: "", message: "" });
   const [focused, setFocused] = useState("");
 
@@ -128,7 +127,6 @@ export default function SummerTrainingPage() {
             {/* Mobile-only quick action strip */}
             <div className="flex gap-3 lg:hidden">
               <button
-                onClick={() => setEnquiryOpen(true)}
                 className="flex-1 py-3 rounded-xl bg-[#F05A28] text-white font-black text-sm shadow-lg shadow-[#F05A28]/25"
               >
                 Enroll Now →
@@ -227,7 +225,6 @@ export default function SummerTrainingPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-3 mt-5">
                 <button
-                  onClick={() => setEnquiryOpen(true)}
                   className="px-5 py-2.5 rounded-xl bg-[#F05A28] text-white text-sm font-bold hover:bg-[#D94E20] transition-colors shadow-md shadow-[#F05A28]/25 text-center"
                 >
                   Apply Online →
@@ -322,7 +319,6 @@ export default function SummerTrainingPage() {
                 </div>
                 <div className="grid grid-cols-2 gap-3 mb-4">
                   <button
-                    onClick={() => setEnquiryOpen(true)}
                     className="flex items-center justify-center gap-1.5 border border-[#DDD8CF] rounded-xl py-2.5 text-sm font-semibold text-[#1C1C1C] hover:border-[#F05A28] hover:text-[#F05A28] transition-all"
                   >
                     + Enquiry
@@ -335,7 +331,11 @@ export default function SummerTrainingPage() {
                   </a>
                 </div>
                 <button
-                  onClick={() => setEnquiryOpen(true)}
+                  onClick={() => {
+                    const message = "Hi, I want to enroll in your course";
+                    const url = `https://wa.me/918381978806?text=${encodeURIComponent(message)}`;
+                    window.open(url, "_blank");
+                  }}
                   className="w-full py-3 rounded-xl bg-[#F05A28] text-white font-black text-sm hover:bg-[#D94E20] transition-colors shadow-lg shadow-[#F05A28]/25"
                 >
                   Enroll Now
@@ -426,94 +426,7 @@ export default function SummerTrainingPage() {
         <Footer />
       
 
-      {/* ── Enquiry Modal ── */}
-      {enquiryOpen && (
-        <div
-          className="fixed inset-0 bg-black/40 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4"
-          onClick={() => setEnquiryOpen(false)}
-        >
-          {/* RESPONSIVE FIX: slides up from bottom on mobile, centered modal on sm+ */}
-          <div
-            className="bg-white rounded-t-3xl sm:rounded-3xl p-6 sm:p-8 w-full sm:max-w-md shadow-2xl max-h-[90vh] overflow-y-auto"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="flex items-center justify-between mb-6">
-              <div>
-                <h3 className="text-xl font-black text-[#1C1C1C]">Enquire Now</h3>
-                <div className="w-8 h-1 bg-[#F05A28] rounded-full mt-1.5" />
-              </div>
-              <button
-                onClick={() => setEnquiryOpen(false)}
-                className="text-[#5A5A5A] hover:text-[#F05A28] text-xl font-bold transition-colors w-8 h-8 flex items-center justify-center rounded-full hover:bg-[#F5F2EE]"
-              >✕</button>
-            </div>
-            <div className="space-y-4">
-              {[
-                { label: "Full Name", name: "name", type: "text", placeholder: "Your full name" },
-                { label: "Email", name: "email", type: "email", placeholder: "you@example.com" },
-                { label: "Phone", name: "phone", type: "tel", placeholder: "+91 98765 43210" },
-              ].map((f) => (
-                <div key={f.name} className="flex flex-col gap-1.5">
-                  <label className="text-sm font-semibold text-[#1C1C1C]">
-                    {f.label} <span className="text-[#F05A28]">*</span>
-                  </label>
-                  <input
-                    name={f.name}
-                    type={f.type}
-                    value={form[f.name]}
-                    onChange={handleChange}
-                    onFocus={() => setFocused(f.name)}
-                    onBlur={() => setFocused("")}
-                    placeholder={f.placeholder}
-                    className={`px-4 py-3 text-sm rounded-xl outline-none bg-white text-[#1C1C1C] placeholder-[#B0A89E] border-[1.5px] transition-all duration-200 ${
-                      focused === f.name ? "border-[#F05A28] ring-2 ring-[#F05A28]/10" : "border-[#DDD8CF] hover:border-[#F0C4B0]"
-                    }`}
-                  />
-                </div>
-              ))}
-              <div className="flex flex-col gap-1.5">
-                <label className="text-sm font-semibold text-[#1C1C1C]">Course <span className="text-[#F05A28]">*</span></label>
-                <select
-                  name="course"
-                  value={form.course}
-                  onChange={handleChange}
-                  onFocus={() => setFocused("course")}
-                  onBlur={() => setFocused("")}
-                  className={`px-4 py-3 text-sm rounded-xl outline-none bg-white cursor-pointer appearance-none border-[1.5px] transition-all duration-200 ${
-                    form.course ? "text-[#1C1C1C]" : "text-[#B0A89E]"
-                  } ${focused === "course" ? "border-[#F05A28] ring-2 ring-[#F05A28]/10" : "border-[#DDD8CF] hover:border-[#F0C4B0]"}`}
-                >
-                  <option value="">-- Select Course --</option>
-                  {["MERN Stack", "Python with Django", ".NET MVC", "Java Full Stack", "Android", "Flutter", "AI and ML"].map((c) => (
-                    <option key={c} value={c}>{c}</option>
-                  ))}
-                </select>
-              </div>
-              <div className="flex flex-col gap-1.5">
-                <label className="text-sm font-semibold text-[#1C1C1C]">Message</label>
-                <textarea
-                  name="message"
-                  value={form.message}
-                  onChange={handleChange}
-                  onFocus={() => setFocused("message")}
-                  onBlur={() => setFocused("")}
-                  placeholder="Any specific queries..."
-                  rows={3}
-                  className={`px-4 py-3 text-sm rounded-xl outline-none bg-white text-[#1C1C1C] placeholder-[#B0A89E] border-[1.5px] transition-all duration-200 resize-none ${
-                    focused === "message" ? "border-[#F05A28] ring-2 ring-[#F05A28]/10" : "border-[#DDD8CF] hover:border-[#F0C4B0]"
-                  }`}
-                />
-              </div>
-              <button
-                type="button"
-                className="w-full py-3.5 rounded-xl bg-[#F05A28] text-white font-black text-sm hover:bg-[#D94E20] transition-colors shadow-lg shadow-[#F05A28]/25"
-              >
-                Submit Enquiry →
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+      
     </div>
   );
 }
