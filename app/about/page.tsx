@@ -46,7 +46,6 @@ interface TechItem {
 // ─────────────────────────────────────────
 
 const STATS: StatItem[] = [
-  { value: 50000, suffix: "+", label: "Students Trained", icon: "🎓" },
   { value: 6,     suffix: "+", label: "Technologies",     icon: "💻" },
   { value: 95,    suffix: "%", label: "Placement Rate",   icon: "🚀" },
   { value: 4,     suffix: ".9★", label: "Google Rating",  icon: "⭐" },
@@ -369,14 +368,14 @@ export default function AboutPage(): JSX.Element {
                   <p className="text-xs font-black text-[#F05A28] uppercase tracking-widest mb-1">Since 2025</p>
                   <p className="font-black text-[#1C1C1C] text-lg leading-tight">Building India&apos;s<br />Next Dev Generation</p>
                   <div className="mt-4 flex gap-2">
-                    {["MERN","Python","Java"].map((t) => (
+                    {["MERN","Python","AI"].map((t) => (
                       <span key={t} className="text-xs bg-[#FFF5F1] text-[#F05A28] border border-[#F0C4B0] px-2 py-1 rounded-lg font-semibold">{t}</span>
                     ))}
                   </div>
                 </div>
 
                 {/* Rating card */}
-                <div className="absolute top-36 right-0 bg-[#1C1C1C] rounded-2xl p-5 shadow-2xl border border-white/10 w-52">
+                {/* <div className="absolute top-36 right-0 bg-[#1C1C1C] rounded-2xl p-5 shadow-2xl border border-white/10 w-52">
                   <div className="flex items-center gap-2 mb-2">
                     <div className="flex gap-0.5">
                       {[...Array(5)].map((_, i) => (
@@ -391,7 +390,7 @@ export default function AboutPage(): JSX.Element {
                   <div className="mt-3 h-px bg-white/10" />
                   <p className="text-white font-black text-2xl mt-3">50K+</p>
                   <p className="text-white/40 text-xs">Students Trained</p>
-                </div>
+                </div> */}
 
                 {/* Placement badge */}
                 <div className="absolute bottom-0 left-0 bg-gradient-to-br from-[#F05A28] to-[#FF8C5A] rounded-2xl p-5 shadow-2xl w-48">
@@ -545,7 +544,7 @@ export default function AboutPage(): JSX.Element {
         {/* ══════════════════════════════════════
             TIMELINE
         ══════════════════════════════════════ */}
-        <section id="timeline" className="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+        {/* <section id="timeline" className="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
           <Reveal direction="up" className="text-center mb-14">
             <span className="inline-block bg-[#F05A28]/10 border border-[#F05A28]/20 text-[#F05A28] text-xs font-bold px-4 py-1.5 rounded-full mb-4 tracking-widest uppercase">
               Our Journey
@@ -555,9 +554,7 @@ export default function AboutPage(): JSX.Element {
             </h2>
           </Reveal>
 
-          {/* Vertical timeline */}
           <div className="relative max-w-3xl mx-auto">
-            {/* Centre line */}
             <div className="absolute left-6 sm:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#F05A28] via-[#DDD8CF] to-transparent sm:-translate-x-px" aria-hidden="true" />
 
             <div className="space-y-8 sm:space-y-0">
@@ -568,7 +565,6 @@ export default function AboutPage(): JSX.Element {
                     className={`relative flex items-start gap-6 sm:gap-0 ${i > 0 ? "sm:mt-0" : ""}`}
                     style={{ paddingBottom: i < TIMELINE.length - 1 ? "2.5rem" : 0 } as React.CSSProperties}>
 
-                    {/* Mobile: always left-aligned. Desktop: alternate sides */}
                     <div className={`hidden sm:flex w-1/2 ${isRight ? "justify-end pr-8" : "justify-start pl-8 order-last"}`}>
                       <div className={`bg-white border-2 ${item.highlight ? "border-[#F05A28] shadow-lg shadow-[#F05A28]/15" : "border-[#DDD8CF]"} rounded-2xl p-5 max-w-xs w-full ztc-card-lift`}>
                         <span className={`inline-block text-xs font-black px-3 py-1 rounded-full mb-2 ${item.highlight ? "bg-[#F05A28] text-white" : "bg-[#EEEBE4] text-[#F05A28]"}`}>{item.year}</span>
@@ -577,7 +573,6 @@ export default function AboutPage(): JSX.Element {
                       </div>
                     </div>
 
-                    {/* Dot */}
                     <div className="relative z-10 flex-shrink-0">
                       <div className={`w-12 h-12 rounded-full flex items-center justify-center font-black text-xs shadow-lg ${item.highlight ? "bg-[#F05A28] text-white shadow-[#F05A28]/40" : "bg-white border-2 border-[#DDD8CF] text-[#F05A28]"}`}>
                         {item.year.slice(2)}
@@ -587,10 +582,8 @@ export default function AboutPage(): JSX.Element {
                       )}
                     </div>
 
-                    {/* Desktop: empty spacer for the other side */}
                     <div className="hidden sm:block w-1/2" />
 
-                    {/* Mobile card */}
                     <div className={`sm:hidden flex-1 bg-white border-2 ${item.highlight ? "border-[#F05A28] shadow-lg shadow-[#F05A28]/15" : "border-[#DDD8CF]"} rounded-2xl p-4`}>
                       <span className={`inline-block text-xs font-black px-2.5 py-0.5 rounded-full mb-1.5 ${item.highlight ? "bg-[#F05A28] text-white" : "bg-[#EEEBE4] text-[#F05A28]"}`}>{item.year}</span>
                       <h3 className="font-black text-[#1C1C1C] text-sm mb-1">{item.title}</h3>
@@ -601,7 +594,7 @@ export default function AboutPage(): JSX.Element {
               })}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* ══════════════════════════════════════
             TEAM
