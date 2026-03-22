@@ -92,15 +92,14 @@ function Field({ label, name, type, value, onChange, focused, setFocused, placeh
 
 export default function RegisterPage() {
   const [form, setForm] = useState({
-    name: "", email: "", phone: "", applyFor: "",
+    name: "", email: "", phone: "",
     college: "", course: "", year: "",
   });
   const [focused, setFocused] = useState("");
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
-  const applyOptions = ["Internship", "Training", "Workshop", "Live Project"];
-  const courseOptions = ["PHP", "Python", "MERN Stack", "Java", "React", "Node.js"];
+  const courseOptions = ["Summer Training", "Winter Training", "Apprenticeship",];
   const yearOptions = ["1st Year", "2nd Year", "3rd Year", "4th Year", "Graduated"];
 
   return (
@@ -154,7 +153,7 @@ export default function RegisterPage() {
                 {/* Stats — 2-col grid, always */}
                 <div className="grid grid-cols-2 gap-3 mb-6 sm:mb-8">
                   {[
-                    { num: "500+", label: "Students Trained" },
+                    { num: "50+", label: "Students Trained" },
                     { num: "10+", label: "Live Projects" },
                     { num: "6+", label: "Technologies" },
                     { num: "95%", label: "Placement Rate" },
@@ -227,7 +226,6 @@ export default function RegisterPage() {
                   </div>
                 </div>
 
-                <CustomSelect label="Apply For" name="applyFor" value={form.applyFor} onChange={handleChange} options={applyOptions} focused={focused} setFocused={setFocused} />
                 <Field label="College Name" name="college" type="text" value={form.college} onChange={handleChange} focused={focused} setFocused={setFocused} placeholder="Your college / university" />
 
                 {/* Course + Year — stack on very small, side-by-side on sm+ */}
