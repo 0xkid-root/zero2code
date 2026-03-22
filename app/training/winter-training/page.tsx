@@ -88,7 +88,7 @@ export default function WinterTrainingPage() {
               <button
               onClick={() => {
                   const message = "Hi, I want to enroll in your course";
-                  const url = `https://wa.me/918381978806?text=${encodeURIComponent(message)}`;
+                  const url = `https://wa.me/917570082706?text=${encodeURIComponent(message)}`;
                   window.open(url, "_blank");
   }}
                 className="px-6 py-3 rounded-xl bg-[#F05A28] text-white font-black text-sm hover:bg-[#D94E20] transition-colors shadow-lg shadow-[#F05A28]/25"
@@ -152,7 +152,7 @@ export default function WinterTrainingPage() {
               <button
               onClick={() => {
                   const message = "Hi, I want to enroll in your course";
-                  const url = `https://wa.me/918381978806?text=${encodeURIComponent(message)}`;
+                  const url = `https://wa.me/917570082706?text=${encodeURIComponent(message)}`;
                   window.open(url, "_blank");
   }}
                 className="flex-1 py-3 rounded-xl bg-[#F05A28] text-white font-black text-sm shadow-lg shadow-[#F05A28]/25"
@@ -255,7 +255,7 @@ export default function WinterTrainingPage() {
                 <button
                   onClick={() => {
                     const message = "Hi, I want to enroll in your course";
-                    const url = `https://wa.me/918381978806?text=${encodeURIComponent(message)}`;
+                    const url = `https://wa.me/917570082706?text=${encodeURIComponent(message)}`;
                     window.open(url, "_blank");
                   }}
                   className="px-5 py-2.5 rounded-xl bg-[#F05A28] text-white text-sm font-bold hover:bg-[#D94E20] transition-colors shadow-md shadow-[#F05A28]/25 text-center"
@@ -345,7 +345,7 @@ export default function WinterTrainingPage() {
                   <button
                     onClick={() => {
                       const message = "Hi, I want to enroll in your course";
-                      const url = `https://wa.me/918381978806?text=${encodeURIComponent(message)}`;
+                      const url = `https://wa.me/917570082706?text=${encodeURIComponent(message)}`;
                       window.open(url, "_blank");
                     }}
                     className="flex items-center justify-center gap-1.5 border border-[#DDD8CF] rounded-xl py-2.5 text-sm font-semibold text-[#1C1C1C] hover:border-[#F05A28] hover:text-[#F05A28] transition-all"
@@ -362,7 +362,7 @@ export default function WinterTrainingPage() {
                 <button
                   onClick={() => {
                     const message = "Hi, I want to enroll in your course";
-                    const url = `https://wa.me/918381978806?text=${encodeURIComponent(message)}`;
+                    const url = `https://wa.me/917570082706?text=${encodeURIComponent(message)}`;
                     window.open(url, "_blank");
                   }}
                   className="w-full py-3 rounded-xl bg-[#F05A28] text-white font-black text-sm hover:bg-[#D94E20] transition-colors shadow-lg shadow-[#F05A28]/25"

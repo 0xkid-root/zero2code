@@ -529,7 +529,7 @@ export default function ContactPage(): JSX.Element {
                       📞 Call +91-7570082706
                     </a>
                     <a
-                      href="https://wa.me/917007237006"
+                      href="https://wa.me/917570082706"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center gap-2 py-3 rounded-xl bg-white/10 border border-white/20 text-white text-sm font-semibold hover:bg-white/20 transition-colors"

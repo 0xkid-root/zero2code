@@ -144,7 +144,7 @@ export default function PricingSection() {
                   <Button
                     onClick={() => {
                       const message = "Hi, I want to enroll in your course";
-                      const url = `https://wa.me/918381978806?text=${encodeURIComponent(message)}`;
+                      const url = `https://wa.me/917570082706?text=${encodeURIComponent(message)}`;
                       window.open(url, "_blank");
                     }}
                     className={`w-full font-semibold py-5 rounded-xl mt-2 transition-all duration-200 ${

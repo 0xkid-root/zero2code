@@ -333,7 +333,7 @@ export default function SummerTrainingPage() {
                 <button
                   onClick={() => {
                     const message = "Hi, I want to enroll in your course";
-                    const url = `https://wa.me/918381978806?text=${encodeURIComponent(message)}`;
+                    const url = `https://wa.me/917570082706?text=${encodeURIComponent(message)}`;
                     window.open(url, "_blank");
                   }}
                   className="w-full py-3 rounded-xl bg-[#F05A28] text-white font-black text-sm hover:bg-[#D94E20] transition-colors shadow-lg shadow-[#F05A28]/25"
