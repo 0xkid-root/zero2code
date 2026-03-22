@@ -142,6 +142,11 @@ export default function PricingSection() {
 
                   {/* CTA */}
                   <Button
+                    onClick={() => {
+                      const message = "Hi, I want to enroll in your course";
+                      const url = `https://wa.me/918381978806?text=${encodeURIComponent(message)}`;
+                      window.open(url, "_blank");
+                    }}
                     className={`w-full font-semibold py-5 rounded-xl mt-2 transition-all duration-200 ${
                       isPopular
                         ? "bg-primary hover:bg-primary/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5"

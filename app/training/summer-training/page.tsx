@@ -275,9 +275,9 @@ export default function SummerTrainingPage() {
               {/* RESPONSIVE FIX: grid-cols-1 on mobile, 3 on sm+ */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 {[
-                  { label: "Basic Session", price: "₹4,999", duration: "4 Weeks" },
-                  { label: "Technology Session", price: "₹7,000", duration: "6 Weeks", highlight: true },
-                  { label: "Full Program", price: "₹10,999", duration: "8 Weeks" },
+                  { label: "Summer Training Session", price: "₹3000", duration: "4 Weeks to 6 weeks" },
+                  // { label: "Technology Session", price: "₹7,000", duration: "6 Weeks", highlight: true },
+                  // { label: "Full Program", price: "₹10,999", duration: "8 Weeks" },
                 ].map((f) => (
                   <div
                     key={f.label}
@@ -315,7 +315,7 @@ export default function SummerTrainingPage() {
               {/* Price + Enroll Card */}
               <div className="bg-white rounded-2xl border border-[#DDD8CF] p-5 sm:p-6 shadow-sm">
                 <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-2xl font-black text-green-500">7000/-</h3>
+                  <h3 className="text-2xl font-black text-green-500">3000/-</h3>
                   <span className="text-xs text-[#5A5A5A] bg-[#EEEBE4] border border-[#DDD8CF] rounded-full px-3 py-1">
                     Limited Seats
                   </span>

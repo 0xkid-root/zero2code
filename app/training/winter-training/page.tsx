@@ -76,9 +76,8 @@ export default function WinterTrainingPage() {
             {/* Stats row */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-4 mb-6">
               {[
-                { value: "50,000+", label: "Students Trained" },
-                { value: "4.9 ⭐", label: "Google Rating" },
-                { value: "4–6 Weeks", label: "Program Duration" },
+                { value: "50+", label: "Students Trained" },
+                { value: "4 Weeks to 10 Weeks", label: "Program Duration" },
               ].map((s) => (
                 <div key={s.label} className="bg-white border border-[#DDD8CF] rounded-xl px-4 py-2.5 text-center shadow-sm">
                   <p className="font-black text-[#1C1C1C] text-sm">{s.value}</p>
@@ -123,20 +122,8 @@ export default function WinterTrainingPage() {
             </div>
 
             {/* Floating stat cards */}
-            <div className="absolute -top-4 -left-6 bg-white rounded-2xl shadow-lg border border-[#DDD8CF] px-4 py-3 flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-[#F5D5C8] flex items-center justify-center text-xl">🎓</div>
-              <div>
-                <p className="text-[#1C1C1C] font-black text-sm">50,000+</p>
-                <p className="text-[#5A5A5A] text-xs">Students Trained</p>
-              </div>
-            </div>
-            <div className="absolute -bottom-4 -right-4 bg-white rounded-2xl shadow-lg border border-[#DDD8CF] px-4 py-3 flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-[#F5D5C8] flex items-center justify-center text-xl">⭐</div>
-              <div>
-                <p className="text-[#1C1C1C] font-black text-sm">4.9 Rating</p>
-                <p className="text-[#5A5A5A] text-xs">2900+ Google Reviews</p>
-              </div>
-            </div>
+            
+            
           </div>
 
           {/* Mobile hero image */}
@@ -279,9 +266,8 @@ export default function WinterTrainingPage() {
               <div className="w-8 h-1 rounded-full bg-[#F05A28] mb-6" />
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 {[
-                  { label: "Basic Session", price: "₹4,999", duration: "4 Weeks" },
-                  { label: "Technology Session", price: "₹7,999", duration: "6 Weeks", highlight: true },
-                  { label: "Full Program", price: "₹10,999", duration: "8 Weeks" },
+                  { label: "Winter Training Session", price: "₹15000", duration: "4 Weeks to 10 Weeks" },
+                 
                 ].map((f) => (
                   <div
                     key={f.label}
