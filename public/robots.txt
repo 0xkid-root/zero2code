@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap reference
-Sitemap: https://skillmanthan.com/sitemap.xml
+Sitemap: https://zerotwocode.com/sitemap.xml
 
 # Disallow crawling of sensitive paths
 Disallow: /admin/
