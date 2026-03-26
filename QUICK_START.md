@@ -69,13 +69,13 @@ Find and update:
 <span>Your City, Your Country</span>
 
 // Add social links
-<a href="https://linkedin.com/company/YOUR_COMPANY">
+<a href="https://www.linkedin.com/company/zerotwocode/">
 ```
 
 ### Logo Text - `/components/header.tsx` & `/components/footer.tsx`
 
 ```typescript
-// Change "SkillManthan" to your company name
+// Change "zerotwocode" to your company name
 <span className="text-xl font-bold">YourCompanyName</span>
 ```
 

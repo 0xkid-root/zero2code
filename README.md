@@ -53,8 +53,9 @@ A modern, fully responsive, and SEO-optimized landing page built with **Next.js 
 
 ### 1. Clone & Install
 ```bash
-git clone https://github.com/yourusername/skillmanthan-landing.git
-cd skillmanthan-landing
+https://github.com/zerotwocodeofficial
+git clone https://github.com/zerotwocodeofficial
+cd zerotwocode-landing
 npm install
 ```
 
@@ -73,7 +74,7 @@ npm run start
 ## 📁 Project Structure
 
 ```
-skillmanthan-landing/
+zerotwocode-landing/
 ├── app/
 │   ├── layout.tsx              # Root layout with SEO metadata
 │   ├── page.tsx                # Landing page

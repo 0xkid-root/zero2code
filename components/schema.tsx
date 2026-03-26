@@ -2,20 +2,20 @@ export default function SchemaMarkup() {
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'SkillManthan',
-    url: 'https://skillmanthan.com',
-    logo: 'https://skillmanthan.com/logo.png',
+    name: 'zerotwocode',
+    url: 'https://zerotwocode.com',
+    logo: 'https://zerotwocode.com/logo.png',
     description: 'Industry-oriented IT training platform',
     sameAs: [
-      'https://www.linkedin.com/company/skillmanthan',
-      'https://twitter.com/skillmanthan',
-      'https://www.facebook.com/skillmanthan',
+      'https://www.linkedin.com/company/zerotwocode/',
+      'https://twitter.com/zerotwocode',
+      'https://www.facebook.com/zerotwocode',
     ],
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'Customer Service',
-      telephone: '+91-9876543210',
-      email: 'info@skillmanthan.com',
+      telephone: '+91-7570082706',
+      email: 'zerotwocode.official@gmail.com',
     },
   }
 
@@ -26,8 +26,8 @@ export default function SchemaMarkup() {
     description: 'Comprehensive IT training programs with expert instructors',
     provider: {
       '@type': 'Organization',
-      name: 'SkillManthan',
-      sameAs: 'https://skillmanthan.com',
+      name: 'zerotwocode',
+      sameAs: 'https://zerotwocode.com',
     },
     aggregateRating: {
       '@type': 'AggregateRating',
