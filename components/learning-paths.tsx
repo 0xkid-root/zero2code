@@ -2,14 +2,14 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 
 const categories = [
-  { id: 1, slug: "summer-training", title: "Summer Training",        tag: "SUMMER",      duration: "8 Weeks",  students: "2.4k", icon: "☀️",  short: "Hands-on summer immersion for students"    },
-  { id: 2, slug: "apprenticeship", title: "Apprenticeship Program", tag: "APPRENTICE",  duration: "6 Months", students: "1.8k", icon: "🔧",  short: "Learn directly under industry mentors"     },
-  { id: 3, slug: "winter-training", title: "Winter Training",        tag: "WINTER",      duration: "6 Weeks",  students: "1.2k", icon: "❄️",  short: "Intensive winter skill bootcamp"            },
-  { id: 4, slug: "industrial-training", title: "Industrial Training",    tag: "INDUSTRIAL",  duration: "3 Months", students: "3.1k", icon: "🏭",  short: "Real-world industrial exposure"            },
-  { id: 5, title: "Corporate Training",     tag: "CORPORATE",   duration: "4 Weeks",  students: "2.9k", icon: "💼",  short: "Upskill your workforce fast"               },
-  { id: 6, title: "Faculty Development",    tag: "FACULTY",     duration: "2 Months", students: "890",  icon: "🎓",  short: "Empower educators with new skills"         },
-  { id: 7,slug: "vocational-training", title: "Vocational Training",    tag: "VOCATIONAL",  duration: "10 Weeks", students: "1.5k", icon: "⚙️",  short: "Job-ready vocational certification"        },
-  { id: 8, title: "Syllabus Training",      tag: "SYLLABUS",    duration: "12 Weeks", students: "2.1k", icon: "📚",  short: "Curriculum-mapped training tracks"         },
+  { id: 1, slug: "summer-training", title: "Summer Training",        tag: "SUMMER",      duration: "8 Weeks",   icon: "☀️",  short: "Hands-on summer immersion for students"    },
+  { id: 2, slug: "apprenticeship", title: "Apprenticeship Program", tag: "APPRENTICE",  duration: "6 Months", icon: "🔧",  short: "Learn directly under industry mentors"     },
+  { id: 3, slug: "winter-training", title: "Winter Training",        tag: "WINTER",      duration: "6 Weeks",  icon: "❄️",  short: "Intensive winter skill bootcamp"            },
+  { id: 4, slug: "industrial-training", title: "Industrial Training",    tag: "INDUSTRIAL",  duration: "3 Months",  icon: "🏭",  short: "Real-world industrial exposure"            },
+  { id: 5, title: "Corporate Training",     tag: "CORPORATE",   duration: "4 Weeks",   icon: "💼",  short: "Upskill your workforce fast"               },
+  { id: 6, title: "Faculty Development",    tag: "FACULTY",     duration: "2 Months",   icon: "🎓",  short: "Empower educators with new skills"         },
+  { id: 7,slug: "vocational-training", title: "Vocational Training",    tag: "VOCATIONAL",  duration: "10 Weeks",  icon: "⚙️",  short: "Job-ready vocational certification"        },
+  { id: 8, title: "Syllabus Training",      tag: "SYLLABUS",    duration: "12 Weeks",  icon: "📚",  short: "Curriculum-mapped training tracks"         },
 ];
 
 function shuffle(arr) {

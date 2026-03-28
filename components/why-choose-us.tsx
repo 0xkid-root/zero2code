@@ -93,9 +93,9 @@ export default function WhyChooseUs() {
             const progress = Math.min(elapsed / duration, 1)
             const ease = 1 - Math.pow(1 - progress, 3)
             setCounters({
-              technology: Math.floor(ease * 20),
-              projects: Math.floor(ease * 120),
-              mentors: Math.floor(ease * 45),
+              technology: Math.floor(ease * 5),
+              projects: Math.floor(ease * 12),
+              mentors: Math.floor(ease * 5),
             })
             if (progress < 1) requestAnimationFrame(animate)
           }
