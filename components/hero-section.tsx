@@ -121,7 +121,7 @@ export default function HeroSection() {
             {/* Subtext */}
             <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">
               Learn from expert instructors and gain hands-on experience with the latest technologies.
-              Start your journey with <strong className="text-foreground font-semibold">ZeroToCode</strong> and build real-world skills that matter.
+              Start your journey with <strong className="text-foreground font-semibold">ZeroTwoCode</strong> and build real-world skills that matter.
             </p>
 
             {/* CTAs */}
