@@ -58,7 +58,7 @@ export default function Header() {
     />
 
     <span className="text-xl font-bold text-foreground">
-      ZeroToCode
+      ZeroTwoCode
     </span>
     
   </div>
