@@ -238,17 +238,14 @@ export const allBlogPosts: BlogDetail[] = [
 
 ];
 
-// Helper function to get single blog post by slug
 export function getBlogBySlug(slug: string): BlogDetail | undefined {
   return allBlogPosts.find(post => post.slug === slug);
 }
 
-// Helper function to get blog posts for listing (without full content)
 export function getBlogPostsForListing(): BlogPost[] {
   return allBlogPosts.map(({ emoji, content, sections, relatedPostIds, ...post }) => post);
 }
 
-// Helper function to get related posts
 export function getRelatedPosts(postId: number, limit = 3): BlogPost[] {
   const post = allBlogPosts.find(p => p.id === postId);
   if (!post?.relatedPostIds) return [];
