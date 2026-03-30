@@ -3,127 +3,12 @@
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { useState, useEffect, useRef, ReactNode } from "react";
-
-// ─────────────────────────────────────────
-// Types
-// ─────────────────────────────────────────
-
-interface StatItem {
-  value: number;
-  suffix: string;
-  label: string;
-  icon: string;
-}
-
-interface TeamMember {
-  name: string;
-  role: string;
-  initials: string;
-  color: string;
-  expertise: string[];
-}
-
-interface ValueItem {
-  icon: string;
-  title: string;
-  desc: string;
-}
-
-interface TimelineItem {
-  year: string;
-  title: string;
-  desc: string;
-  highlight: boolean;
-}
-
-interface TechItem {
-  label: string;
-  color: string;
-}
-
-// ─────────────────────────────────────────
-// Static Data
-// ─────────────────────────────────────────
-
-const STATS: StatItem[] = [
-  { value: 6,     suffix: "+", label: "Technologies",     icon: "💻" },
-  { value: 95,    suffix: "%", label: "Placement Rate",   icon: "🚀" },
-  { value: 4,     suffix: ".9★", label: "Google Rating",  icon: "⭐" },
-  { value: 3,     suffix: "+", label: "Years Experience", icon: "📅" },
-  { value: 200,   suffix: "+", label: "Live Projects",    icon: "🏗️" },
-];
-
-const TEAM: TeamMember[] = [
-  {
-    name: "Anish Yadav",
-    role: "Founder & CEO",
-    initials: "A.Y.",
-    color: "from-[#F05A28] to-[#FF8C5A]",
-    expertise: ["AI"],
-  },
-  {
-    name: "Avinash Panday",
-    role: "Head of Training",
-    initials: "A.V.",
-    color: "from-purple-500 to-pink-500",
-    expertise: ["Leadership", "AI/ML", "Team Lead"],
-  },
-  {
-    name: "Gaurav Kumar",
-    role: "Tech Lead",
-    initials: "G. K.",
-    color: "from-blue-500 to-cyan-500",
-    expertise: ["Full Stack", "MERN", "Blockchain"],
-  },
-  {
-    name: "Anika Yadav",
-    role: "HR & Placement",
-    initials: "A. K.",
-    color: "from-green-500 to-teal-500",
-    expertise: ["Recruitment", "Placement", "PD"],
-  },
-];
-
-const VALUES: ValueItem[] = [
-  { icon: "🎯", title: "Outcome-First",   desc: "Every program is designed around one goal — your career. Theory follows practice, not the other way around." },
-  { icon: "🤝", title: "Real Mentorship",  desc: "Our mentors are active industry professionals, not just lecturers. You get battle-tested guidance." },
-  { icon: "🔥", title: "Live Projects",    desc: "You build real applications for real clients. Your portfolio proves your skill from day one." },
-  { icon: "🌱", title: "Always Evolving",  desc: "Our syllabus is updated every quarter to match what top companies actually hire for." },
-  { icon: "💡", title: "Zero-to-Hero",     desc: "We welcome complete beginners. Our structured path takes you from zero code to job-ready." },
-  { icon: "🏆", title: "Proven Results",   desc: "4.9 stars from 2,900+ genuine Google reviews. Our reputation is built on student success stories." },
-];
-
-const TIMELINE: TimelineItem[] = [
-  { year: "2025", title: "The Beginning",          desc: "zerotwocode started in a small room in Lucknow with 12 students and a dream to make quality IT education accessible.",      highlight: false },
-  { year: "2025", title: "First 1,000 Students",   desc: "Crossed the 1,000 students milestone. Expanded to a full campus with dedicated labs and mentorship rooms.",               highlight: false },
-  { year: "2025", title: "Online Programs Launch",  desc: "Pivoted to hybrid learning during the pandemic — pioneered live online training that now serves students across India.",   highlight: true  },
-  { year: "2025", title: "Apprenticeship Program",  desc: "Launched India's most comprehensive 6-month CS/IT apprenticeship — students got real salaries during training.",          highlight: false },
-  { year: "2025", title: "AI & ML Courses Added",   desc: "Integrated Artificial Intelligence and Machine Learning into the curriculum — staying 2 years ahead of the market.",     highlight: false },
-  { year: "2025", title: "50,000+ Alumni Strong",   desc: "Today zerotwocode alumni work at companies across India and the world. The mission continues — one student at a time.",   highlight: true  },
-];
-
-const TECHS: TechItem[] = [
-  { label: "HTML5",    color: "bg-orange-100 text-orange-600 border-orange-200" },
-  { label: "CSS3",     color: "bg-blue-100   text-blue-600   border-blue-200"   },
-  { label: "JavaScript", color: "bg-yellow-100 text-yellow-700 border-yellow-200" },
-  { label: "React.js", color: "bg-cyan-100   text-cyan-700   border-cyan-200"   },
-  { label: "Node.js",  color: "bg-green-100  text-green-700  border-green-200"  },
-  { label: "Python",   color: "bg-yellow-100 text-yellow-800 border-yellow-200" },
-  { label: "Django",   color: "bg-green-100  text-green-800  border-green-200"  },
-  { label: "Java",     color: "bg-red-100    text-red-700    border-red-200"    },
-  { label: "Spring",   color: "bg-green-100  text-green-600  border-green-200"  },
-  { label: ".NET",     color: "bg-purple-100 text-purple-700 border-purple-200" },
-  { label: "Flutter",  color: "bg-cyan-100   text-cyan-600   border-cyan-200"   },
-  { label: "MongoDB",  color: "bg-green-100  text-green-700  border-green-200"  },
-  { label: "MySQL",    color: "bg-blue-100   text-blue-700   border-blue-200"   },
-  { label: "AI & ML",  color: "bg-[#FFF5F1]  text-[#F05A28]  border-[#F0C4B0]" },
-];
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { TEAM, STATS, VALUES, TIMELINE, TECHS } from "@/lib/about-data";
 
 const NAV_LINKS: string[] = ["Home", "Training", "Services", "About", "Blog", "Contact"];
 
-// ─────────────────────────────────────────
-// Helpers
-// ─────────────────────────────────────────
 
 // Deterministic particles (no Math.random → no hydration mismatch)
 const PARTICLES = Array.from({ length: 20 }, (_, i) => ({
@@ -606,7 +491,7 @@ export default function AboutPage(): JSX.Element {
                 The People Behind It
               </span>
               <h2 className="text-3xl sm:text-4xl font-black text-[#1C1C1C]">
-                Meet Our <span className="ztc-grad-text">Team</span>
+                Meet Our <span className="ztc-grad-text">Team hiiii</span>
               </h2>
               <p className="text-sm text-[#5A5A5A] mt-3 max-w-md mx-auto">
                 Industry veterans, passionate educators, and placement specialists — all in one place.
@@ -638,12 +523,44 @@ export default function AboutPage(): JSX.Element {
                     {/* Hover reveal */}
                     <div className="mt-4 pt-4 border-t border-[#EEEBE4] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <div className="flex justify-center gap-3">
-                        {["💼","🐙","✖"].map((icon) => (
-                          <button type="button" key={icon}
-                            className="w-8 h-8 rounded-full bg-[#EEEBE4] hover:bg-[#F05A28] hover:text-white flex items-center justify-center text-sm transition-all duration-200">
-                            {icon}
-                          </button>
-                        ))}
+                        <div className="mt-4 pt-4 border-t border-[#EEEBE4] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+  <div className="flex justify-center gap-3">
+
+    {member.social?.linkedin && (
+      <a
+        href={member.social.linkedin}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-8 h-8 rounded-full bg-[#EEEBE4] hover:bg-[#0A66C2] hover:text-white flex items-center justify-center transition-all duration-200"
+      >
+        <FaLinkedinIn size={14} />
+      </a>
+    )}
+
+    {member.social?.github && (
+      <a
+        href={member.social.github}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-8 h-8 rounded-full bg-[#EEEBE4] hover:bg-black hover:text-white flex items-center justify-center transition-all duration-200"
+      >
+        <FaGithub size={14} />
+      </a>
+    )}
+
+    {member.social?.twitter && (
+      <a
+        href={member.social.twitter}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-8 h-8 rounded-full bg-[#EEEBE4] hover:bg-[#1DA1F2] hover:text-white flex items-center justify-center transition-all duration-200"
+      >
+        <FaXTwitter size={14} />
+      </a>
+    )}
+
+  </div>
+</div>
                       </div>
                     </div>
                   </div>
@@ -652,6 +569,7 @@ export default function AboutPage(): JSX.Element {
             </div>
           </div>
         </section>
+
         <section className="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
           <Reveal direction="up" className="text-center mb-10">
             <span className="inline-block bg-[#F05A28]/10 border border-[#F05A28]/20 text-[#F05A28] text-xs font-bold px-4 py-1.5 rounded-full mb-4 tracking-widest uppercase">
