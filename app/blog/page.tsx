@@ -18,8 +18,9 @@ export default function BlogPage() {
     : blogPosts.filter(post => post.category === activeCategory);
 
   const featuredPost = blogPosts.find(post => post.featured);
-  const gridPosts = activeCategory === 'All' ? filteredPosts.slice(1) : filteredPosts;
-
+const gridPosts = activeCategory === 'All' && featuredPost
+  ? filteredPosts.filter(post => post.id !== featuredPost.id)
+  : filteredPosts;
   return (
     <div className="min-h-screen bg-[#EEEBE4]">
       <Header />

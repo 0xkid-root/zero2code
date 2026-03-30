@@ -28,12 +28,61 @@ export interface BlogDetail extends BlogPost {
 
 // SINGLE SOURCE OF TRUTH - All blog data in one place
 export const allBlogPosts: BlogDetail[] = [
+{
+  id: 1,
+  slug: 'html-css-course-lucknow',
+  title: 'Top HTML & CSS Course in Lucknow (2026) – Complete Guide for Students',
+  excerpt: 'Looking for the best HTML & CSS course in Lucknow? Check course details, fees, syllabus, job opportunities, and career scope for beginners in 2026.',
+  author: '0xKid_root',
+  date: 'Mar 20, 2025',
+  category: 'Web Development',
+  readTime: '9 min',
+  emoji: '🌐',
+  image: '/images/blog-html-css-course.png',
+  imageAlt: 'Best HTML CSS course in Lucknow for beginners web development training',
+  featured: false,
+  tag: 'Course Guide',
+  content: 'If you are searching for the best HTML & CSS course in Lucknow, this guide will help you understand everything from syllabus to career opportunities. HTML and CSS are the foundation of web development. HTML is used to structure websites, while CSS is used to design and style them. With the growing demand for websites in Lucknow and across India, learning these skills can help you start your career in tech quickly.',
+  sections: [
+    {
+      title: 'Why Learn HTML & CSS in Lucknow?',
+      content: 'Lucknow is becoming a fast-growing tech city with increasing demand for web developers and designers. HTML and CSS are beginner-friendly and allow you to build real websites from scratch. Local businesses, startups, and agencies in Lucknow are actively hiring frontend developers.',
+      highlight: 'HTML and CSS are the easiest and fastest way to start a career in web development, even if you have zero coding experience.'
+    },
+    {
+      title: 'What You Can Build After Learning',
+      content: 'After completing an HTML & CSS course, you can create business websites for local shops, personal portfolio websites, responsive landing pages, blog websites, and even basic eCommerce pages. These skills also help you start freelancing in Lucknow.',
+      tip: 'Build at least 3–5 real projects like a portfolio and landing page to showcase your skills.'
+    },
+    {
+      title: 'Career Scope & Salary in Lucknow and India',
+      content: 'After learning HTML & CSS, you can apply for roles like Frontend Developer (₹3–5 LPA), UI Developer (₹4–7 LPA), Web Designer (₹2.5–4 LPA), or Full Stack Developer (₹6–12 LPA). In Lucknow, beginners can earn around ₹10,000–₹25,000 per month and grow quickly with experience.',
+      highlight: 'With experience and strong projects, developers can earn ₹10–25 LPA in top companies.'
+    },
+    {
+      title: 'Course Curriculum Overview',
+      content: 'A complete HTML & CSS course includes HTML basics (structure, forms, semantic tags), CSS concepts (box model, flexbox, grid, responsive design), and real-world projects like portfolio websites and landing pages. Most courses can be completed in 30–60 days.',
+      tip: 'Focus on responsive design and mobile-first approach as most companies prefer these skills.'
+    },
+    {
+      title: 'Who Should Join This Course?',
+      content: 'This course is ideal for B.Tech, BCA, MCA students, beginners with no coding background, diploma students, working professionals, and freelancers. Anyone interested in web development can start without any prior experience.',
+      highlight: 'There are no prerequisites — you can start learning HTML & CSS from zero.'
+    },
+    {
+      title: 'Next Steps After HTML & CSS',
+      content: 'After mastering HTML and CSS, you should learn JavaScript for interactivity, then move to frontend frameworks like React, and finally explore backend technologies like Node.js to become a full-stack developer.',
+      tip: 'Do not rush into advanced topics. Build a strong foundation in HTML and CSS first.'
+    }
+  ],
+  relatedPostIds: [2, 3, 4]
+},
   {
-    id: 5,
+    id: 2,
     slug: 'zero-to-6lpa-8-months',
     title: 'From Zero Coding Knowledge to a ₹6 LPA Job in 8 Months',
     excerpt: 'A mechanical engineering graduate shares his journey through vocational training and how he pivoted into a full-stack developer role.',
-    author: 'Rohit Mishra',
+    author: '0xKid_root',
     date: 'Jan 15, 2025',
     category: 'Student Stories',
     readTime: '4 min',
@@ -71,7 +120,7 @@ export const allBlogPosts: BlogDetail[] = [
     relatedPostIds: [2, 3, 4]
   },
   {
-    id: 2,
+    id: 3,
     slug: 'crack-first-it-interview',
     title: 'How to Crack Your First IT Interview: A Step-by-Step Guide',
     excerpt: 'Resume tips, mock interview strategies, and the exact DSA topics that matter most — from students who landed top jobs.',
@@ -108,7 +157,7 @@ export const allBlogPosts: BlogDetail[] = [
     relatedPostIds: [1, 3, 5]
   },
   {
-    id: 3,
+    id: 4,
     slug: 'ai-not-replacing-developers',
     title: 'AI is Not Replacing Developers — Here\'s What to Learn Instead',
     excerpt: 'We break down exactly which skills make developers AI-proof in 2025 and why learning full-stack + AI fundamentals is crucial.',
@@ -145,7 +194,7 @@ export const allBlogPosts: BlogDetail[] = [
     relatedPostIds: [1, 2, 4]
   },
   {
-    id: 4,
+    id: 5,
     slug: 'django-vs-nodejs-2025',
     title: 'Django vs Node.js: Which Backend Should You Learn First in 2025?',
     excerpt: 'A comprehensive comparison of Python Django and Node.js — performance, learning curve, job demand, and recommendations.',
@@ -186,49 +235,7 @@ export const allBlogPosts: BlogDetail[] = [
     ],
     relatedPostIds: [1, 2, 3]
   },
-  {
-    id: 5,
-    slug: 'zero-to-6lpa-8-months',
-    title: 'From Zero Coding Knowledge to a ₹6 LPA Job in 8 Months',
-    excerpt: 'A mechanical engineering graduate shares his journey through vocational training and how he pivoted into a full-stack developer role.',
-    author: 'Rohit Mishra',
-    date: 'Jan 15, 2025',
-    category: 'Student Stories',
-    readTime: '4 min',
-    tag: 'Story',
-    emoji: '💪',
-    image: '/images/blog-success-story.jpg',
-    imageAlt: 'Career transformation and success story from zero to developer',
-    content: 'My journey from mechanical engineering to full-stack developer wasn\'t easy, but it was absolutely worth it. Here\'s my honest story and lessons learned.',
-    sections: [
-      {
-        title: 'Month 1-2: Fundamentals',
-        content: 'I started with JavaScript basics: variables, functions, async/await. My mechanical background actually helped with logical thinking, but coding syntax felt alien at first.',
-        highlight: 'Building small projects immediately (todo app, calculator) kept me motivated.'
-      },
-      {
-        title: 'Month 3-4: Frontend Deep Dive',
-        content: 'React was the game-changer. Building component-based UIs clicked with my design mindset from mechanical engineering. I built 3 projects: portfolio, e-commerce, and a real estate app.',
-        tip: 'Don\'t skip the fundamentals. My initial struggles with closures haunted me later—solidifying basics first saves time.'
-      },
-      {
-        title: 'Month 5-6: Backend & Databases',
-        content: 'Node.js and MongoDB felt natural after React. Building APIs made sense. The challenge was understanding database design and relationships, but schemas helped visualize the architecture.',
-        highlight: 'My first API took 2 weeks to build. By month 6, I was building complex backends in days.'
-      },
-      {
-        title: 'Month 7-8: Projects & Job Hunt',
-        content: 'I built 2 full-stack projects showcasing real-world features: user authentication, payment integration, and real-time notifications. This portfolio got me 5 interview calls.',
-        tip: 'Quality over quantity. One great project beats 10 mediocre ones.'
-      },
-      {
-        title: 'The Breakthrough',
-        content: 'My mechanical background became a feature, not a bug. I could explain systems clearly and think about architecture. Got an offer at ₹6 LPA as full-stack developer.',
-        highlight: 'My advice: Commit for at least 6 months. Consistency matters more than hours.'
-      }
-    ],
-    relatedPostIds: [1, 2, 4]
-  }
+
 ];
 
 // Helper function to get single blog post by slug
