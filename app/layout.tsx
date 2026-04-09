@@ -22,6 +22,9 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: 'ZeroTwoCode - Industry-Oriented IT Training Programs',
   description: 'Transform your tech career with ZeroTwoCode. Expert-led IT training in AWS, Python, Java, Android, Digital Marketing & Full-Stack development with 98% placement rate.',
+  verification: {
+  google: "wpo_GgXwAbe6484CGxazAPnivA5Z9Gx2srKU_hg0n80",
+},
   keywords: 'IT training, programming courses, AWS training, Python development, Java training, Full-Stack development, career development, online courses',
   authors: [{ name: 'ZeroTwoCode' }],
   creator: 'ZeroTwoCode',
@@ -52,6 +55,8 @@ export const metadata: Metadata = {
   
 }
 
+
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -75,6 +80,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+       <meta name="google-site-verification" content="wpo_GgXwAbe6484CGxazAPnivA5Z9Gx2srKU_hg0n80" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+      </head>
   {/* Google Analytics */}
   <Script
     src="https://www.googletagmanager.com/gtag/js?id=G-JBCPZKQ9P6"
