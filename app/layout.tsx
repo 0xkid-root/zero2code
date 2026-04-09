@@ -80,46 +80,39 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-       <meta name="google-site-verification" content="wpo_GgXwAbe6484CGxazAPnivA5Z9Gx2srKU_hg0n80" />
+        <meta name="google-site-verification" content="wpo_GgXwAbe6484CGxazAPnivA5Z9Gx2srKU_hg0n80" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
       </head>
-  {/* Google Analytics */}
-  <Script
-    src="https://www.googletagmanager.com/gtag/js?id=G-JBCPZKQ9P6"
-    strategy="afterInteractive"
-  />
-  <Script id="google-analytics" strategy="afterInteractive">
-    {`
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-JBCPZKQ9P6');
-    `}
-  </Script>
-
-  {/* Your existing schema */}
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-  />
-</head>
       <body className="font-sans antialiased">
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-JBCPZKQ9P6"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-JBCPZKQ9P6');
+          `}
+        </Script>
+
         {children}
-         <Toaster
-    position="top-right"
-    toastOptions={{
-      duration: 3000,
-      style: {
-        background: "#1A1A1A",
-        color: "#fff",
-        borderRadius: "10px",
-        fontSize: "14px",
-      },
-    }}
-  />
+        <Toaster
+          position="top-right"
+          toastOptions={{
+            duration: 3000,
+            style: {
+              background: "#1A1A1A",
+              color: "#fff",
+              borderRadius: "10px",
+              fontSize: "14px",
+            },
+          }}
+        />
         <Analytics />
       </body>
     </html>
