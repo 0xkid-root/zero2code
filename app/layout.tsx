@@ -22,9 +22,6 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: 'ZeroTwoCode - Industry-Oriented IT Training Programs',
   description: 'Transform your tech career with ZeroTwoCode. Expert-led IT training in AWS, Python, Java, Android, Digital Marketing & Full-Stack development with 98% placement rate.',
-  verification: {
-  google: "wpo_GgXwAbe6484CGxazAPnivA5Z9Gx2srKU_hg0n80",
-},
   keywords: 'IT training, programming courses, AWS training, Python development, Java training, Full-Stack development, career development, online courses',
   authors: [{ name: 'ZeroTwoCode' }],
   creator: 'ZeroTwoCode',
