@@ -4,6 +4,8 @@ import { Analytics } from '@vercel/analytics/next'
 import { Toaster } from "react-hot-toast";
 import './globals.css'
 import Script from 'next/script'
+import WhatsAppButton from "@/components/WhatsAppButton";
+
 
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
@@ -98,6 +100,8 @@ export default function RootLayout({
         </Script>
 
         {children}
+        <WhatsAppButton />
+
         <Toaster
           position="top-right"
           toastOptions={{
