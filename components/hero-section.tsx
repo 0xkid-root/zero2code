@@ -70,7 +70,7 @@ export default function HeroSection() {
             {/* Badge */}
             <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/25 rounded-full text-sm font-semibold text-foreground backdrop-blur-sm">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              Transform Your Tech Career
+              Start Learning & Get Job Ready
             </span>
 
             {/* Headline */}
