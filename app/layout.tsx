@@ -230,56 +230,113 @@ export default function RootLayout({
     }
   ];
 
-  return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}>
-        {/* Schema Markup Injection */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-<<<<<<< HEAD
+//   return (
+//     <html lang="en">
+//       <head>
+//         {/* Schema Markup Injection */}
+//         <script
+//           type="application/ld+json"
+//           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+//         />
+// <<<<<<< HEAD
         
-=======
-      </head>
-  {/* Google Analytics */}
-  <Script
-    src="https://www.googletagmanager.com/gtag/js?id=G-JBCPZKQ9P6"
-    strategy="afterInteractive"
-  />
-  <Script id="google-analytics" strategy="afterInteractive">
-    {`
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-JBCPZKQ9P6');
-    `}
-  </Script>
+// =======
+      
+//   {/* Google Analytics */}
+//   <Script>
+//     src="https://www.googletagmanager.com/gtag/js?id=G-JBCPZKQ9P6"
+//     strategy="afterInteractive"
+//   />
+//   <Script id="google-analytics" strategy="afterInteractive">
+//     {`
+//       window.dataLayer = window.dataLayer || [];
+//       function gtag(){dataLayer.push(arguments);}
+//       gtag('js', new Date());
+//       gtag('config', 'G-JBCPZKQ9P6');
+//     `}
+//   </Script>
 
-  {/* Your existing schema */}
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-  />
-</head>
-      <body className="font-sans antialiased">
->>>>>>> 78acb80e5c03d1f09f584f41d24eaa725b424003
-        {children}
+//   {/* Your existing schema */}
+//   <script
+//     type="application/ld+json"
+//     dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+//   />
+// </head>
+// <body className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}>
+//       {/* <body className="font-sans antialiased"> */}
+// >>>>>>> 78acb80e5c03d1f09f584f41d24eaa725b424003
+//         {children}
 
-        <Toaster
-          position="top-right"
-          toastOptions={{
-            duration: 3000,
-            style: {
-              background: "#1A1A1A",
-              color: "#fff",
-              borderRadius: "10px",
-              fontSize: "14px",
-            },
-          }}
-        />
-        <Analytics />
-      </body>
-    </html>
-  )
+//         <Toaster
+//           position="top-right"
+//           toastOptions={{
+//             duration: 3000,
+//             style: {
+//               background: "#1A1A1A",
+//               color: "#fff",
+//               borderRadius: "10px",
+//               fontSize: "14px",
+//             },
+//           }}
+//         />
+//         <Analytics />
+//       </body>
+//     </html>
+//   )
+// }
+
+return (
+  <html lang="en">
+    <head>
+      {/* Schema Markup Injection */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
+      {/* Google Analytics */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-JBCPZKQ9P6"
+        strategy="afterInteractive"
+      />
+
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-JBCPZKQ9P6');
+        `}
+      </Script>
+
+      {/* Organization Schema */}
+     {/* <script
+     type="application/ld+json"
+     dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+   /> */}
+      
+    </head>
+
+    <body
+      className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
+    >
+      {children}
+
+      <Toaster
+        position="top-right"
+        toastOptions={{
+          duration: 3000,
+          style: {
+            background: "#1A1A1A",
+            color: "#fff",
+            borderRadius: "10px",
+            fontSize: "14px",
+          },
+        }}
+      />
+
+      <Analytics />
+    </body>
+  </html>
+)
 }
