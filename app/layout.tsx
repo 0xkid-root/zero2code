@@ -109,6 +109,7 @@ import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { Toaster } from "react-hot-toast";
 import './globals.css'
+import Script from 'next/script'
 
 const geistSans = Geist({ subsets: ["latin"], variable: "--font-geist-sans" });
 const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" });
@@ -237,7 +238,32 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+<<<<<<< HEAD
         
+=======
+      </head>
+  {/* Google Analytics */}
+  <Script
+    src="https://www.googletagmanager.com/gtag/js?id=G-JBCPZKQ9P6"
+    strategy="afterInteractive"
+  />
+  <Script id="google-analytics" strategy="afterInteractive">
+    {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JBCPZKQ9P6');
+    `}
+  </Script>
+
+  {/* Your existing schema */}
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+  />
+</head>
+      <body className="font-sans antialiased">
+>>>>>>> 78acb80e5c03d1f09f584f41d24eaa725b424003
         {children}
 
         <Toaster
