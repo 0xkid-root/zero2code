@@ -166,7 +166,7 @@ export const pricing = [
       "Job-Ready Curriculum",
       "Certificates Included"
     ],
-    buttonText: "Comming Soon",
+    buttonText: "Coming Soon",
     isPopular: false
   }
 ];
