@@ -599,7 +599,7 @@ export default function ContactPage(): JSX.Element {
                 </div>
                 <div className="p-4">
                   <a
-                    href="https://maps.google.com"
+                    href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3635788.8081183876!2d80.85930415!3d27.138192949999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa66a4483d77cd237%3A0x69a62fd515df6ee!2sZeroTwoCode!5e0!3m2!1sen!2sin!4v1775986366676!5m2!1sen!2sin"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 w-full py-2.5 rounded-xl border-2 border-[#DDD8CF] text-sm font-bold text-[#1C1C1C] hover:border-[#F05A28] hover:text-[#F05A28] transition-all duration-200"

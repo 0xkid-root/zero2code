@@ -491,7 +491,7 @@ export default function AboutPage(): JSX.Element {
                 The People Behind It
               </span>
               <h2 className="text-3xl sm:text-4xl font-black text-[#1C1C1C]">
-                Meet Our <span className="ztc-grad-text">Team hiiii</span>
+                Meet Our <span className="ztc-grad-text">Team </span>
               </h2>
               <p className="text-sm text-[#5A5A5A] mt-3 max-w-md mx-auto">
                 Industry veterans, passionate educators, and placement specialists — all in one place.
