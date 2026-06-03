@@ -6,7 +6,7 @@ import { useState } from "react";
 const benefits = [
   "4-5 Hour Daily Classes",
   "Study Material for Every Technology",
-  "Full Lifetime Suport",
+  "Full Lifetime Support",
   "Free Hosting Support for Your Live Projects",
   "Recovery Classes & Doubt Sessions",
   "Project File Provided",

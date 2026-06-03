@@ -29,7 +29,7 @@ const footerRef = useRef<HTMLElement | null>(null)
   }, [])
 
   const programs = [
-    { label: 'Summar Training', slug: 'summer-training', tag: 'HOT' },
+    { label: 'Summer Training', slug: 'summer-training', tag: 'HOT' },
     { label: 'Vocational Training', slug: 'vocational-training', tag: null },
     { label: 'Winter Training', slug: 'winter-training', tag: null },
     { label: 'Apprenticeship', slug: 'apprenticeship', tag: 'NEW' },
@@ -486,9 +486,23 @@ const footerRef = useRef<HTMLElement | null>(null)
             <div className="ztc-contact-item">
               <div className="ztc-contact-icon"><MapPin size={13} /></div>
               <div className="ztc-contact-text">
-                <div style={{ fontSize: '0.6rem', letterSpacing: '0.1em', color: 'rgba(255,255,255,0.3)', marginBottom: '2px' }}>LOCATION</div>
-                Lucknow, India
-              </div>
+  <div style={{ 
+    fontSize: '0.6rem', 
+    letterSpacing: '0.1em', 
+    color: 'rgba(255,255,255,0.3)', 
+    marginBottom: '2px' 
+  }}>
+    LOCATION
+  </div>
+
+  <a 
+  href="https://www.google.com/maps/search/?api=1&query=ZeroTwoCode+Lucknow" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  📍 Lucknow, India
+</a>
+</div>
             </div>
           </div>
         </div>
