@@ -35,7 +35,7 @@ export const TEAM: TeamMember[] = [
     role: "Founder & CEO",
     initials: "A.Y.",
     color: "from-[#F05A28] to-[#FF8C5A]",
-    expertise: ["AI"],
+    expertise: [""],
     social: {
       linkedin: "https://linkedin.com/in/anish-yadav",
       twitter: "https://twitter.com/anishyadav",
@@ -47,7 +47,7 @@ export const TEAM: TeamMember[] = [
     role: "Head of Training",
     initials: "A.V.",
     color: "from-purple-500 to-pink-500",
-    expertise: ["Leadership", "AI/ML", "Team Lead"],
+    expertise: ["Leadership", "Team Lead"],
     social: {
       linkedin: "https://linkedin.com/in/avinash-panday",
       twitter: "https://twitter.com/avinashpanday",
@@ -55,15 +55,15 @@ export const TEAM: TeamMember[] = [
     }
   },
   {
-    name: "Anika Yadav",
-    role: "HR & Placement",
-    initials: "A. K.",
-    color: "from-green-500 to-teal-500",
-    expertise: ["Recruitment", "Placement", "PD"],
+    name: "Abhishek Mishra",
+    role: "Mentor",
+    initials: "A.M.",
+    color: "from-purple-500 to-pink-500",
+    expertise: [""],
     social: {
-      linkedin: "https://linkedin.com/in/anika-yadav",
-      twitter: "https://twitter.com/anikayadav",
-      github: "https://github.com/anikayadav"
+      linkedin: "https://linkedin.com/in/abhishek-mishra",
+      twitter: "https://twitter.com/abhishekmishra",
+      github: "https://github.com/abhishekmishra"
     }
   },
   {
